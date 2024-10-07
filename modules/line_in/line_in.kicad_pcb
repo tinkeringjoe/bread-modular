@@ -6270,6 +6270,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "line_in_0.2.0"
+		(at 70.612 105.918 0)
+		(layer "F.SilkS")
+		(uuid "a88e9bf8-5eab-4a2b-9d8a-19853f23e50a")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "RIGHT"
 		(at 69.596 48.514 0)
 		(layer "F.SilkS")
