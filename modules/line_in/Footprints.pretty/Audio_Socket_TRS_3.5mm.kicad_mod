@@ -1,0 +1,174 @@
+(footprint "Audio_Socket_TRS_3.5mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "900cd51b-d38c-4257-9387-6d79a430e6b7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Audio_Socket_TRS_3.5mm"
+		(at 0 7.62 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a820e0de-0124-4424-87ab-a78895982132")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at -10.16 -10.16 -90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f15e727e-d62f-46db-b46d-ebf18377b3ff")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -10.16 -10.16 -90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f94a5554-ec62-48ed-b4aa-a6b72682d408")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -10.16 -10.16 -90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d6ef7c1c-b9bb-4770-9c12-834f1e71c23a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -5.08 -7.62)
+		(end -5.08 5.08)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4d434f23-4bbf-4a42-8a9f-c00977eac5d1")
+	)
+	(fp_line
+		(start -5.08 -7.62)
+		(end 5.08 -7.62)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "24f8bf13-ba86-4150-944f-bf73052ec0db")
+	)
+	(fp_line
+		(start -5.08 5.08)
+		(end 5.08 5.08)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a3371521-0d04-4d85-8dfb-d582ad3849ee")
+	)
+	(fp_line
+		(start 5.08 5.08)
+		(end 5.08 -7.62)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c4cad2c1-5d1d-4be8-84b5-a55f451a9425")
+	)
+	(fp_line
+		(start -5.08 -7.62)
+		(end 5.08 -7.62)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "8b5d3cef-1a6a-44c8-b3b0-7328d729417e")
+	)
+	(fp_line
+		(start -5.08 5.08)
+		(end -5.08 -7.62)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a4339a39-a811-45af-95a0-31b2fd74957a")
+	)
+	(fp_line
+		(start 5.08 -7.62)
+		(end 5.08 5.08)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "d0bcb760-6193-47b6-94c7-3402705dbeae")
+	)
+	(fp_line
+		(start 5.08 5.08)
+		(end -5.08 5.08)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "9adcc88f-a63b-4f9e-a0c0-862236c35c1f")
+	)
+	(pad "1" thru_hole circle
+		(at 0 2.54 270)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "002a19a4-a115-4d1f-9344-3dbd65756ef8")
+	)
+	(pad "2" thru_hole circle
+		(at 0 -5.08 270)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "35f54741-f38d-4898-8896-2a5286890646")
+	)
+	(pad "3" thru_hole circle
+		(at 0 5.08 270)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fb8bba1c-6870-42b8-a73c-2c5e057ecaa4")
+	)
+)
