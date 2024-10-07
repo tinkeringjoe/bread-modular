@@ -53,14 +53,14 @@
 			(pin output line
 				(at 1.27 -1.27 0)
 				(length 2.54)
-				(name "1"
+				(name "TIP"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -71,14 +71,14 @@
 			(pin output line
 				(at 1.27 -3.81 0)
 				(length 2.54)
-				(name "2"
+				(name "RING"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -89,14 +89,14 @@
 			(pin output line
 				(at 1.27 -6.35 0)
 				(length 2.54)
-				(name "3"
+				(name "SLEEVE"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
