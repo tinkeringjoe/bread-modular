@@ -450,7 +450,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "blank.kicad_pro",
+    "filename": "4_mix.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -600,7 +600,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": ""
+      "workbook_filename": "4_mix.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
