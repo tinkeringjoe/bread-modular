@@ -740,7 +740,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "af4a2699-894c-46d4-a28f-65a7d93cf2ee")
-		(at 55.88 53.34 -90)
+		(at 55.88 50.8 -90)
 		(descr "Through hole straight pin header, 1x05, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x05 2.54mm single row")
 		(property "Reference" "5V1"
@@ -1047,7 +1047,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "b450a4bb-677b-4360-b664-c08b67406b65")
-		(at 86.36 53.34 -90)
+		(at 86.36 50.8 -90)
 		(descr "Through hole straight pin header, 1x05, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x05 2.54mm single row")
 		(property "Reference" "5V2"
@@ -1273,7 +1273,7 @@
 			(uuid "924eee5d-4c16-4741-b7ea-3e67c7d99cf8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -5.08 360)
+			(at 0 -5.08 0)
 			(layer "B.Fab")
 			(uuid "a09ca9af-aa4e-48f5-9db1-ca804ad47919")
 			(effects
@@ -1392,7 +1392,7 @@
 		(uuid "d9337509-29a1-48f9-8acd-f4c43de0304c")
 	)
 	(gr_text "4_MIX"
-		(at 71.12 49.53 0)
+		(at 71.12 48.26 0)
 		(layer "F.SilkS")
 		(uuid "832516b9-df76-4380-a8ca-4f4593f57b4d")
 		(effects
