@@ -3479,7 +3479,7 @@
 			)
 		)
 	)
-	(global_label "IN_5"
+	(global_label "IN_2"
 		(shape input)
 		(at 354.33 139.7 90)
 		(fields_autoplaced yes)
