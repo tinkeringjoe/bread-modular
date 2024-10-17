@@ -5,7 +5,7 @@
 	(uuid "b63493d3-5f6d-47e3-845b-87e7090fc1ab")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Amplifier_Operational:LM358"
+		(symbol "Amplifier_Operational:TL072"
 			(pin_names
 				(offset 0.127)
 			)
@@ -21,7 +21,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "LM358"
+			(property "Value" "TL072"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -39,7 +39,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -48,7 +48,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -83,7 +83,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM358_1_1"
+			(symbol "TL072_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -151,7 +151,7 @@
 					)
 				)
 			)
-			(symbol "LM358_2_1"
+			(symbol "TL072_2_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -219,7 +219,7 @@
 					)
 				)
 			)
-			(symbol "LM358_3_1"
+			(symbol "TL072_3_1"
 				(pin power_in line
 					(at -2.54 -7.62 90)
 					(length 3.81)
@@ -1892,6 +1892,12 @@
 		(uuid "4bc1cdb6-cd3c-4d80-9f8c-061604951312")
 	)
 	(junction
+		(at 101.6 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58b72e62-e89c-4f03-95db-d0782bd2ccbb")
+	)
+	(junction
 		(at 59.69 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1982,6 +1988,12 @@
 		(uuid "d88edcf6-8653-4ad6-be72-33afd6eb64da")
 	)
 	(junction
+		(at 101.6 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e950534c-bf53-44a1-96d6-0aa4f42ae11f")
+	)
+	(junction
 		(at 238.76 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1992,18 +2004,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f01cb701-6873-4f77-a02c-b5e571403f8c")
-	)
-	(junction
-		(at 101.6 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f314a250-f61e-45fe-8fdb-61ef764615f1")
-	)
-	(junction
-		(at 101.6 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f5566175-21e8-4fdd-ac05-04ea8d2cea19")
 	)
 	(wire
 		(pts
@@ -2667,16 +2667,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 91.44) (xy 208.28 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a565cf62-ca35-4548-b594-4772b35ec270")
-	)
-	(wire
-		(pts
 			(xy 36.83 116.84) (xy 41.91 116.84)
 		)
 		(stroke
@@ -2907,7 +2897,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 99.06) (xy 208.28 104.14)
+			(xy 208.28 96.52) (xy 208.28 104.14)
 		)
 		(stroke
 			(width 0)
@@ -4082,33 +4072,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 143.51 64.77 0)
-		(unit 2)
+		(lib_id "Amplifier_Operational:TL072")
+		(at 195.58 97.79 0)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2152e1cf-c57f-4599-a843-665310445e93")
+		(uuid "1cf1dcd9-368f-4751-8bb4-fcc10e137f13")
 		(property "Reference" "U1"
-			(at 143.51 54.61 0)
+			(at 194.31 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "LM358"
-			(at 143.51 57.15 0)
+		(property "Value" "TL072"
+			(at 194.31 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 64.77 0)
+			(at 195.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4116,8 +4108,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 143.51 64.77 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 195.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4125,8 +4117,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 143.51 64.77 0)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 195.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4134,8 +4126,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 143.51 64.77 0)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 195.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4144,7 +4136,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 143.51 64.77 0)
+			(at 195.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4153,7 +4145,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 143.51 64.77 0)
+			(at 195.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4162,7 +4154,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 143.51 64.77 0)
+			(at 195.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4170,35 +4162,157 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "550a4094-fbde-4180-8a60-543d3980c5de")
+		(pin "5"
+			(uuid "1b9aa57f-7022-4431-8b27-201e69b9b052")
 		)
 		(pin "6"
-			(uuid "77e5c119-c940-48f3-bd46-9566ea4ba65e")
-		)
-		(pin "4"
-			(uuid "53eb85e8-fb29-4e50-a8f3-23ca7fd74e3f")
-		)
-		(pin "7"
-			(uuid "917f98c1-88c5-43d4-8336-3df5c1ccf399")
-		)
-		(pin "5"
-			(uuid "3ecb907e-e148-462e-b139-96e3238f36ab")
+			(uuid "43f4b79b-5ca9-4c16-bb22-caaa19350645")
 		)
 		(pin "3"
-			(uuid "219c58fb-2b32-4001-b82d-5a6c012c97d3")
+			(uuid "060f9c02-cd79-46f7-a64d-192f5355412b")
 		)
 		(pin "8"
-			(uuid "10bb9916-e73a-423c-ac95-2cfbb0426372")
+			(uuid "a49510c8-7364-4df5-ae64-cf864cbae9c1")
+		)
+		(pin "1"
+			(uuid "cc5feb90-0422-4f2e-93f4-5ca27d81dda2")
+		)
+		(pin "7"
+			(uuid "f6c34a48-6143-4630-8447-e26aa4d1d575")
 		)
 		(pin "2"
-			(uuid "c1b38b14-df78-4053-883d-77d2dea59e6d")
+			(uuid "c4282091-bfc1-40c3-96b8-46453b2320c5")
+		)
+		(pin "4"
+			(uuid "04bf0fdf-a7cb-478e-83ed-fc299da6ed5a")
 		)
 		(instances
 			(project ""
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "U1")
-					(unit 2)
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 93.98 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b4b2ed0-2623-4172-93a6-fa74ad3afdfd")
+		(property "Reference" "U3"
+			(at 93.98 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL072"
+			(at 93.98 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 93.98 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f6673cfb-841d-459e-9bcc-4da90d22788a")
+		)
+		(pin "1"
+			(uuid "a5a188b2-0019-44d5-a540-1ed6b67a059d")
+		)
+		(pin "6"
+			(uuid "283b2ea8-ddfe-475f-9c5f-322083d05494")
+		)
+		(pin "7"
+			(uuid "bbd35245-474d-4246-b576-6a0efd57f7c6")
+		)
+		(pin "4"
+			(uuid "73406f75-f97b-4759-a48e-a4cc45c7d19f")
+		)
+		(pin "8"
+			(uuid "a4cfcc65-b70a-4983-ae73-7907b1493333")
+		)
+		(pin "3"
+			(uuid "7c54f2d3-ebc4-4cb6-958a-ed26015e2cf7")
+		)
+		(pin "5"
+			(uuid "84ca3f1e-88e6-4d43-96d7-aa0b110d1f5a")
+		)
+		(instances
+			(project ""
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "U3")
+					(unit 1)
 				)
 			)
 		)
@@ -4570,6 +4684,130 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 227.33 97.79 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c884e0e-46ac-4227-9ef5-64b30b0283b2")
+		(property "Reference" "U2"
+			(at 226.06 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TL072"
+			(at 226.06 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 227.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 227.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 227.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 227.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 227.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 227.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "53700b18-3c25-4a8c-892b-80db6db410fe")
+		)
+		(pin "7"
+			(uuid "7ec0e9a1-ab7a-4ab8-901f-ade45cbbc7bc")
+		)
+		(pin "4"
+			(uuid "912f1efe-2a83-4e83-8173-ffb2f381caaf")
+		)
+		(pin "5"
+			(uuid "6e244c76-7452-43f3-8f30-7ed563b3640f")
+		)
+		(pin "3"
+			(uuid "d25c3400-fdc0-4424-bcca-cb47b21145f8")
+		)
+		(pin "1"
+			(uuid "27c60c29-f76e-4d8e-bffe-fff745721402")
+		)
+		(pin "6"
+			(uuid "2b89abdf-b579-49d0-a385-0ece63c30319")
+		)
+		(pin "8"
+			(uuid "40fb01f2-19cf-4c1d-919d-b0b2e48b8643")
+		)
+		(instances
+			(project ""
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "U2")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 259.08 33.02 0)
 		(unit 1)
@@ -4630,6 +4868,250 @@
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "#PWR05")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 93.98 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44839b56-899e-4f5e-af15-e51c20ac44b2")
+		(property "Reference" "U2"
+			(at 93.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL072"
+			(at 93.98 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 93.98 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 93.98 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 93.98 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 93.98 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 93.98 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 93.98 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "53700b18-3c25-4a8c-892b-80db6db410fe")
+		)
+		(pin "7"
+			(uuid "7ec0e9a1-ab7a-4ab8-901f-ade45cbbc7bc")
+		)
+		(pin "4"
+			(uuid "912f1efe-2a83-4e83-8173-ffb2f381caaf")
+		)
+		(pin "5"
+			(uuid "6e244c76-7452-43f3-8f30-7ed563b3640f")
+		)
+		(pin "3"
+			(uuid "d25c3400-fdc0-4424-bcca-cb47b21145f8")
+		)
+		(pin "1"
+			(uuid "27c60c29-f76e-4d8e-bffe-fff745721402")
+		)
+		(pin "6"
+			(uuid "2b89abdf-b579-49d0-a385-0ece63c30319")
+		)
+		(pin "8"
+			(uuid "40fb01f2-19cf-4c1d-919d-b0b2e48b8643")
+		)
+		(instances
+			(project ""
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 95.25 184.15 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "493c12ca-72ba-4ad3-8339-c30037d0e6e9")
+		(property "Reference" "U3"
+			(at 95.25 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL072"
+			(at 95.25 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 95.25 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 95.25 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 95.25 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 95.25 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 95.25 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 95.25 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f6673cfb-841d-459e-9bcc-4da90d22788a")
+		)
+		(pin "1"
+			(uuid "a5a188b2-0019-44d5-a540-1ed6b67a059d")
+		)
+		(pin "6"
+			(uuid "283b2ea8-ddfe-475f-9c5f-322083d05494")
+		)
+		(pin "7"
+			(uuid "bbd35245-474d-4246-b576-6a0efd57f7c6")
+		)
+		(pin "4"
+			(uuid "73406f75-f97b-4759-a48e-a4cc45c7d19f")
+		)
+		(pin "8"
+			(uuid "a4cfcc65-b70a-4983-ae73-7907b1493333")
+		)
+		(pin "3"
+			(uuid "7c54f2d3-ebc4-4cb6-958a-ed26015e2cf7")
+		)
+		(pin "5"
+			(uuid "84ca3f1e-88e6-4d43-96d7-aa0b110d1f5a")
+		)
+		(instances
+			(project ""
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "U3")
+					(unit 2)
 				)
 			)
 		)
@@ -4704,7 +5186,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 208.28 95.25 0)
+		(at 208.28 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4713,7 +5195,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b8563ac-889a-430d-b546-f8fe1ec38204")
 		(property "Reference" "C1"
-			(at 212.09 93.9799 0)
+			(at 212.09 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4722,7 +5204,7 @@
 			)
 		)
 		(property "Value" "0.1uf"
-			(at 212.09 96.5199 0)
+			(at 212.09 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4731,7 +5213,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.2452 99.06 0)
+			(at 209.2452 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4740,7 +5222,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 208.28 95.25 0)
+			(at 208.28 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4749,7 +5231,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 208.28 95.25 0)
+			(at 208.28 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4836,128 +5318,6 @@
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "R3")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 143.51 107.95 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7fffbb74-6a13-49d7-804a-1c49eea78967")
-		(property "Reference" "U2"
-			(at 143.51 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM358"
-			(at 143.51 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 143.51 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 143.51 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 143.51 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 143.51 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 143.51 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 143.51 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "550a4094-fbde-4180-8a60-543d3980c5df")
-		)
-		(pin "6"
-			(uuid "8db4a54e-581d-47dc-a2b6-dc97153a1adf")
-		)
-		(pin "4"
-			(uuid "53eb85e8-fb29-4e50-a8f3-23ca7fd74e40")
-		)
-		(pin "7"
-			(uuid "1a3349b7-e42c-446d-a10c-9945b1d082e5")
-		)
-		(pin "5"
-			(uuid "f2df9851-83ee-4b37-90e1-d3570b2e4b31")
-		)
-		(pin "3"
-			(uuid "219c58fb-2b32-4001-b82d-5a6c012c97d4")
-		)
-		(pin "8"
-			(uuid "10bb9916-e73a-423c-ac95-2cfbb0426373")
-		)
-		(pin "2"
-			(uuid "c1b38b14-df78-4053-883d-77d2dea59e6e")
-		)
-		(instances
-			(project "line_in"
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "U2")
-					(unit 2)
 				)
 			)
 		)
@@ -5064,6 +5424,130 @@
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "RV1")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 257.81 97.79 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8081229e-1b38-4c93-a5a7-0b4cd862e38a")
+		(property "Reference" "U3"
+			(at 256.54 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TL072"
+			(at 256.54 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 257.81 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 257.81 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 257.81 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 257.81 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 257.81 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 257.81 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f6673cfb-841d-459e-9bcc-4da90d22788a")
+		)
+		(pin "1"
+			(uuid "a5a188b2-0019-44d5-a540-1ed6b67a059d")
+		)
+		(pin "6"
+			(uuid "283b2ea8-ddfe-475f-9c5f-322083d05494")
+		)
+		(pin "7"
+			(uuid "bbd35245-474d-4246-b576-6a0efd57f7c6")
+		)
+		(pin "4"
+			(uuid "73406f75-f97b-4759-a48e-a4cc45c7d19f")
+		)
+		(pin "8"
+			(uuid "a4cfcc65-b70a-4983-ae73-7907b1493333")
+		)
+		(pin "3"
+			(uuid "7c54f2d3-ebc4-4cb6-958a-ed26015e2cf7")
+		)
+		(pin "5"
+			(uuid "84ca3f1e-88e6-4d43-96d7-aa0b110d1f5a")
+		)
+		(instances
+			(project ""
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "U3")
+					(unit 3)
 				)
 			)
 		)
@@ -5274,128 +5758,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 93.98 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "88f94401-6a33-4f95-9a92-105492bef50d")
-		(property "Reference" "U1"
-			(at 93.98 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM358"
-			(at 93.98 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 93.98 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 93.98 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 93.98 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 93.98 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 93.98 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 93.98 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "550a4094-fbde-4180-8a60-543d3980c5e0")
-		)
-		(pin "6"
-			(uuid "77e5c119-c940-48f3-bd46-9566ea4ba65f")
-		)
-		(pin "4"
-			(uuid "53eb85e8-fb29-4e50-a8f3-23ca7fd74e41")
-		)
-		(pin "7"
-			(uuid "917f98c1-88c5-43d4-8336-3df5c1ccf39a")
-		)
-		(pin "5"
-			(uuid "3ecb907e-e148-462e-b139-96e3238f36ac")
-		)
-		(pin "3"
-			(uuid "219c58fb-2b32-4001-b82d-5a6c012c97d5")
-		)
-		(pin "8"
-			(uuid "10bb9916-e73a-423c-ac95-2cfbb0426374")
-		)
-		(pin "2"
-			(uuid "c1b38b14-df78-4053-883d-77d2dea59e6f")
-		)
-		(instances
-			(project ""
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 255.27 72.39 90)
 		(unit 1)
@@ -5461,6 +5823,128 @@
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "R2")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 143.51 107.95 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98adf5a1-d8a3-44b5-bb3a-b3eca3dce76e")
+		(property "Reference" "U2"
+			(at 143.51 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL072"
+			(at 143.51 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 143.51 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 143.51 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 143.51 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 143.51 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 143.51 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 143.51 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "53700b18-3c25-4a8c-892b-80db6db410fe")
+		)
+		(pin "7"
+			(uuid "7ec0e9a1-ab7a-4ab8-901f-ade45cbbc7bc")
+		)
+		(pin "4"
+			(uuid "912f1efe-2a83-4e83-8173-ffb2f381caaf")
+		)
+		(pin "5"
+			(uuid "6e244c76-7452-43f3-8f30-7ed563b3640f")
+		)
+		(pin "3"
+			(uuid "d25c3400-fdc0-4424-bcca-cb47b21145f8")
+		)
+		(pin "1"
+			(uuid "27c60c29-f76e-4d8e-bffe-fff745721402")
+		)
+		(pin "6"
+			(uuid "2b89abdf-b579-49d0-a385-0ece63c30319")
+		)
+		(pin "8"
+			(uuid "40fb01f2-19cf-4c1d-919d-b0b2e48b8643")
+		)
+		(instances
+			(project ""
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "U2")
+					(unit 2)
 				)
 			)
 		)
@@ -5678,130 +6162,6 @@
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "C5")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 195.58 97.79 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a6724db5-aaaf-40f0-8c77-e3ef7997007e")
-		(property "Reference" "U1"
-			(at 194.31 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LM358"
-			(at 194.31 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 195.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 195.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 195.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 195.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 195.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 195.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "550a4094-fbde-4180-8a60-543d3980c5e1")
-		)
-		(pin "6"
-			(uuid "77e5c119-c940-48f3-bd46-9566ea4ba660")
-		)
-		(pin "4"
-			(uuid "53eb85e8-fb29-4e50-a8f3-23ca7fd74e42")
-		)
-		(pin "7"
-			(uuid "917f98c1-88c5-43d4-8336-3df5c1ccf39b")
-		)
-		(pin "5"
-			(uuid "3ecb907e-e148-462e-b139-96e3238f36ad")
-		)
-		(pin "3"
-			(uuid "219c58fb-2b32-4001-b82d-5a6c012c97d6")
-		)
-		(pin "8"
-			(uuid "10bb9916-e73a-423c-ac95-2cfbb0426375")
-		)
-		(pin "2"
-			(uuid "c1b38b14-df78-4053-883d-77d2dea59e70")
-		)
-		(instances
-			(project ""
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "U1")
-					(unit 3)
 				)
 			)
 		)
@@ -6134,376 +6494,6 @@
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "#PWR01")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 170.18 158.75 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c5f76ad1-7470-4595-a320-1da511c6b470")
-		(property "Reference" "U3"
-			(at 170.18 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM358"
-			(at 170.18 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 170.18 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 170.18 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 170.18 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 170.18 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 170.18 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 170.18 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "550a4094-fbde-4180-8a60-543d3980c5e2")
-		)
-		(pin "6"
-			(uuid "30d87daf-e0dd-4756-ba2d-c7d874f13be4")
-		)
-		(pin "4"
-			(uuid "53eb85e8-fb29-4e50-a8f3-23ca7fd74e43")
-		)
-		(pin "7"
-			(uuid "f235b514-b96e-44e1-91f0-f46219450813")
-		)
-		(pin "5"
-			(uuid "d1d40df0-5ef4-4043-96db-f6ada4c99139")
-		)
-		(pin "3"
-			(uuid "219c58fb-2b32-4001-b82d-5a6c012c97d7")
-		)
-		(pin "8"
-			(uuid "10bb9916-e73a-423c-ac95-2cfbb0426376")
-		)
-		(pin "2"
-			(uuid "c1b38b14-df78-4053-883d-77d2dea59e71")
-		)
-		(instances
-			(project "line_in"
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "U3")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 257.81 97.79 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cac8d7ac-23b8-4cdd-8849-d3bd6e2b5607")
-		(property "Reference" "U3"
-			(at 256.54 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LM358"
-			(at 256.54 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 257.81 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 257.81 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 257.81 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 257.81 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 257.81 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 257.81 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 257.81 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "550a4094-fbde-4180-8a60-543d3980c5e3")
-		)
-		(pin "6"
-			(uuid "77e5c119-c940-48f3-bd46-9566ea4ba661")
-		)
-		(pin "4"
-			(uuid "3cb064b2-d686-4cf5-b60f-83074ad8ef76")
-		)
-		(pin "7"
-			(uuid "917f98c1-88c5-43d4-8336-3df5c1ccf39c")
-		)
-		(pin "5"
-			(uuid "3ecb907e-e148-462e-b139-96e3238f36ae")
-		)
-		(pin "3"
-			(uuid "219c58fb-2b32-4001-b82d-5a6c012c97d8")
-		)
-		(pin "8"
-			(uuid "04ddcacc-c178-4241-86c5-c4242a8c6be2")
-		)
-		(pin "2"
-			(uuid "c1b38b14-df78-4053-883d-77d2dea59e72")
-		)
-		(instances
-			(project "line_in"
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "U3")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 227.33 97.79 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "caeab92f-39ac-42b3-a7f0-acdb9b166c49")
-		(property "Reference" "U2"
-			(at 226.06 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LM358"
-			(at 226.06 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 227.33 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 227.33 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 227.33 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 227.33 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 227.33 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 227.33 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 227.33 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "550a4094-fbde-4180-8a60-543d3980c5e4")
-		)
-		(pin "6"
-			(uuid "77e5c119-c940-48f3-bd46-9566ea4ba662")
-		)
-		(pin "4"
-			(uuid "447e08cf-db12-439e-a3ea-553546727fe6")
-		)
-		(pin "7"
-			(uuid "917f98c1-88c5-43d4-8336-3df5c1ccf39d")
-		)
-		(pin "5"
-			(uuid "3ecb907e-e148-462e-b139-96e3238f36af")
-		)
-		(pin "3"
-			(uuid "219c58fb-2b32-4001-b82d-5a6c012c97d9")
-		)
-		(pin "8"
-			(uuid "a3da7ea1-777b-418a-a8c1-7f27cd730a5a")
-		)
-		(pin "2"
-			(uuid "c1b38b14-df78-4053-883d-77d2dea59e73")
-		)
-		(instances
-			(project "line_in"
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "U2")
-					(unit 3)
 				)
 			)
 		)
@@ -7222,128 +7212,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 93.98 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f5bcf7e4-e481-4b0f-8cad-599ca4feb36f")
-		(property "Reference" "U3"
-			(at 93.98 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM358"
-			(at 93.98 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 93.98 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf207f50-ed8f-4b0a-b907-813b5d663617")
-		)
-		(pin "6"
-			(uuid "77e5c119-c940-48f3-bd46-9566ea4ba663")
-		)
-		(pin "4"
-			(uuid "53eb85e8-fb29-4e50-a8f3-23ca7fd74e44")
-		)
-		(pin "7"
-			(uuid "917f98c1-88c5-43d4-8336-3df5c1ccf39e")
-		)
-		(pin "5"
-			(uuid "3ecb907e-e148-462e-b139-96e3238f36b0")
-		)
-		(pin "3"
-			(uuid "7b5760d6-5fe7-4d4d-bc02-f71c72589452")
-		)
-		(pin "8"
-			(uuid "10bb9916-e73a-423c-ac95-2cfbb0426377")
-		)
-		(pin "2"
-			(uuid "778ad17d-8da8-461f-bd5a-880409eec5be")
-		)
-		(instances
-			(project "line_in"
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x05_Pin")
 		(at 264.16 24.13 90)
 		(mirror x)
@@ -7487,25 +7355,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 93.98 109.22 0)
-		(unit 1)
+		(lib_id "Amplifier_Operational:TL072")
+		(at 143.51 64.77 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fca8471c-de8d-44c4-a64a-804d71392663")
-		(property "Reference" "U2"
-			(at 93.98 99.06 0)
+		(uuid "f93c79c0-6603-42bf-b019-b4934f565b06")
+		(property "Reference" "U1"
+			(at 143.51 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LM358"
-			(at 93.98 101.6 0)
+		(property "Value" "TL072"
+			(at 143.51 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7513,7 +7381,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 109.22 0)
+			(at 143.51 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7521,8 +7389,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 93.98 109.22 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 143.51 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7530,8 +7398,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 93.98 109.22 0)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 143.51 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7539,8 +7407,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 93.98 109.22 0)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 143.51 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7549,7 +7417,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 93.98 109.22 0)
+			(at 143.51 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7558,7 +7426,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 93.98 109.22 0)
+			(at 143.51 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7567,7 +7435,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 93.98 109.22 0)
+			(at 143.51 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7575,35 +7443,35 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "7209d5d9-67e2-4871-935d-fac71cc3ccb3")
+		(pin "5"
+			(uuid "1b9aa57f-7022-4431-8b27-201e69b9b052")
 		)
 		(pin "6"
-			(uuid "77e5c119-c940-48f3-bd46-9566ea4ba664")
-		)
-		(pin "4"
-			(uuid "53eb85e8-fb29-4e50-a8f3-23ca7fd74e45")
-		)
-		(pin "7"
-			(uuid "917f98c1-88c5-43d4-8336-3df5c1ccf39f")
-		)
-		(pin "5"
-			(uuid "3ecb907e-e148-462e-b139-96e3238f36b1")
+			(uuid "43f4b79b-5ca9-4c16-bb22-caaa19350645")
 		)
 		(pin "3"
-			(uuid "736fe436-d397-4bce-9246-5c333a14809c")
+			(uuid "060f9c02-cd79-46f7-a64d-192f5355412b")
 		)
 		(pin "8"
-			(uuid "10bb9916-e73a-423c-ac95-2cfbb0426378")
+			(uuid "a49510c8-7364-4df5-ae64-cf864cbae9c1")
+		)
+		(pin "1"
+			(uuid "cc5feb90-0422-4f2e-93f4-5ca27d81dda2")
+		)
+		(pin "7"
+			(uuid "f6c34a48-6143-4630-8447-e26aa4d1d575")
 		)
 		(pin "2"
-			(uuid "1df5055d-b339-4a2a-bedb-7e455559f9e9")
+			(uuid "c4282091-bfc1-40c3-96b8-46453b2320c5")
+		)
+		(pin "4"
+			(uuid "04bf0fdf-a7cb-478e-83ed-fc299da6ed5a")
 		)
 		(instances
-			(project "line_in"
+			(project ""
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "U2")
-					(unit 1)
+					(reference "U1")
+					(unit 2)
 				)
 			)
 		)
@@ -7733,6 +7601,128 @@
 			(project "line_in"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 93.98 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe54dbf4-501d-4b7a-a660-da6c02554502")
+		(property "Reference" "U1"
+			(at 93.98 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL072"
+			(at 93.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 93.98 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 93.98 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 93.98 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_opamp_dual"
+			(at 93.98 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 93.98 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+			(at 93.98 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "1b9aa57f-7022-4431-8b27-201e69b9b052")
+		)
+		(pin "6"
+			(uuid "43f4b79b-5ca9-4c16-bb22-caaa19350645")
+		)
+		(pin "3"
+			(uuid "060f9c02-cd79-46f7-a64d-192f5355412b")
+		)
+		(pin "8"
+			(uuid "a49510c8-7364-4df5-ae64-cf864cbae9c1")
+		)
+		(pin "1"
+			(uuid "cc5feb90-0422-4f2e-93f4-5ca27d81dda2")
+		)
+		(pin "7"
+			(uuid "f6c34a48-6143-4630-8447-e26aa4d1d575")
+		)
+		(pin "2"
+			(uuid "c4282091-bfc1-40c3-96b8-46453b2320c5")
+		)
+		(pin "4"
+			(uuid "04bf0fdf-a7cb-478e-83ed-fc299da6ed5a")
+		)
+		(instances
+			(project ""
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "U1")
 					(unit 1)
 				)
 			)
