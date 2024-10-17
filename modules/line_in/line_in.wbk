@@ -26,8 +26,13 @@
           "trace_type": 257
         },
         {
-          "color": "rgb(55, 126, 184)",
-          "signal": "V(OUT_L)",
+          "color": "rgb(77, 175, 74)",
+          "signal": "V(IN_R)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(255, 127, 0)",
+          "signal": "V(OUT_MONO)",
           "trace_type": 257
         }
       ]
@@ -52,8 +57,8 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(228, 26, 28)",
-          "signal": "V(OUT_L) (gain)",
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(OUT_MONO) (gain)",
           "trace_type": 521
         }
       ]
