@@ -2438,22 +2438,10 @@
 		)
 	)
 	(junction
-		(at 153.67 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0bea462f-4a08-48d3-ad5d-bd4111a4ad33")
-	)
-	(junction
 		(at 82.55 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c6a1882-205e-4b02-a9c7-11c286daf47e")
-	)
-	(junction
-		(at 140.97 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "10b06dbc-3b59-452d-9f34-5960cc8273cd")
 	)
 	(junction
 		(at 261.62 30.48)
@@ -2526,18 +2514,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96fbe300-9e23-404a-a021-6557eb38e133")
-	)
-	(junction
-		(at 142.24 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a2a73a5f-d381-4db0-b774-f08a6a728a9b")
-	)
-	(junction
-		(at 154.94 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad41c42f-31a7-456a-91eb-008795190bc2")
 	)
 	(junction
 		(at 148.59 90.17)
@@ -2613,16 +2589,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 143.51) (xy 166.37 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b3c3c8d-96f7-4138-a3c6-973b6367c57e")
-	)
-	(wire
-		(pts
 			(xy 231.14 120.65) (xy 231.14 114.3)
 		)
 		(stroke
@@ -2633,17 +2599,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 135.89) (xy 153.67 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e916f2f-be35-4615-b18f-57e5c2c01791")
-	)
-	(wire
-		(pts
-			(xy 147.32 143.51) (xy 153.67 143.51)
+			(xy 147.32 143.51) (xy 166.37 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2700,16 +2656,6 @@
 			(type default)
 		)
 		(uuid "1beb463f-e15e-4155-80fb-b4919c2b490d")
-	)
-	(wire
-		(pts
-			(xy 142.24 82.55) (xy 154.94 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d9b7947-e6c6-4839-964a-e75b9c61803b")
 	)
 	(wire
 		(pts
@@ -2830,16 +2776,6 @@
 			(type default)
 		)
 		(uuid "4b93b51c-d633-4295-8f6f-da11c8959547")
-	)
-	(wire
-		(pts
-			(xy 154.94 90.17) (xy 168.91 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bda0cf9-7c65-4b15-aa18-1a3ba260940a")
 	)
 	(wire
 		(pts
@@ -3393,7 +3329,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 90.17) (xy 154.94 90.17)
+			(xy 148.59 90.17) (xy 168.91 90.17)
 		)
 		(stroke
 			(width 0)
@@ -3872,7 +3808,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330uf"
+		(property "Value" "470uf"
 			(at 144.78 140.0809 0)
 			(effects
 				(font
@@ -3918,76 +3854,6 @@
 			(project "head_out"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 153.67 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "14bab962-f8bf-4246-b84a-173e501ab033")
-		(property "Reference" "C4"
-			(at 157.48 137.5409 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330uf"
-			(at 157.48 140.0809 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
-			(at 154.6352 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 153.67 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5dd0a1bc-cff8-4e45-9cd3-e6e1e0ef0e35")
-		)
-		(pin "2"
-			(uuid "4419671d-7c09-4d21-8839-06a79b952d36")
-		)
-		(instances
-			(project "head_out"
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -4096,7 +3962,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BreadModular_Pots:PanelHole_Potentiometer_RV09"
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 41.91 140.97 0)
 			(effects
 				(font
@@ -4733,76 +4599,6 @@
 			(project "head_out"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 154.94 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f758ab5-e15a-47af-995c-da8b0ad6e950")
-		(property "Reference" "C2"
-			(at 158.75 84.2009 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330uf"
-			(at 158.75 86.7409 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
-			(at 155.9052 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 154.94 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7dfad7ac-4e9f-43ec-bde4-ac6ad9ca0ac1")
-		)
-		(pin "2"
-			(uuid "b5acb039-6420-4595-86ad-96eda36f0401")
-		)
-		(instances
-			(project "head_out"
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -6249,7 +6045,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BreadModular_Pots:PanelHole_Potentiometer_RV09"
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 43.18 87.63 0)
 			(effects
 				(font
@@ -6993,7 +6789,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330uf"
+		(property "Value" "470uf"
 			(at 146.05 86.7409 0)
 			(effects
 				(font
