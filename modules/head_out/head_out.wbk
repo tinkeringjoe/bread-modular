@@ -21,6 +21,11 @@
       "showGrid": true,
       "traces": [
         {
+          "color": "rgb(77, 175, 74)",
+          "signal": "I(QD1:c)",
+          "trace_type": 258
+        },
+        {
           "color": "rgb(55, 126, 184)",
           "signal": "V(IN_L)",
           "trace_type": 257
