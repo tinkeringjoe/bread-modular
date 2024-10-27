@@ -1,5 +1,9 @@
 #ChangeLog
 
+## 0.3.0
+Use MCP6002
+This is a rail-to-rail opamp. So, we have more heae
+
 ## 0.2.0
 Use TL072 as the opamp.
 Which might resolve the cracks and pops issue.
