@@ -1,0 +1,8 @@
+#ChangeLog
+
+## 0.2.0
+Use TL072 as the opamp.
+Which might resolve the cracks and pops issue.
+
+## 0.1.0
+Initial Release
