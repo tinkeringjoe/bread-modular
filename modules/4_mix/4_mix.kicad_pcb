@@ -10105,7 +10105,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "4_MIX\n0.2.0"
+	(gr_text "4_MIX\n0.3.0"
 		(at 106.807 107.95 0)
 		(layer "F.SilkS")
 		(uuid "a6967da2-833c-462b-b58c-ba8c77e9ed66")
