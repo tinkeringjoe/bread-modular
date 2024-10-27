@@ -1856,12 +1856,6 @@
 		(uuid "0b68d7ce-9720-4d4e-ad79-bce16f4d5887")
 	)
 	(junction
-		(at 355.6 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e8c66aa-bb2a-4060-86ee-80baa7a1e989")
-	)
-	(junction
 		(at 99.06 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1892,12 +1886,6 @@
 		(uuid "2a44cb30-6d09-48fc-90f9-2ed812fb0ef3")
 	)
 	(junction
-		(at 383.54 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3332cda2-6103-49e0-a513-e931949cb871")
-	)
-	(junction
 		(at 99.06 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1916,10 +1904,10 @@
 		(uuid "3d3e145a-39a7-4ef4-bd1b-f342fb3b178a")
 	)
 	(junction
-		(at 328.93 91.44)
+		(at 328.93 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "41fb827d-8fdb-4e2e-9b75-6125c33cfc39")
+		(uuid "4bad30c5-075d-430f-9bd3-895a1ae07cc4")
 	)
 	(junction
 		(at 370.84 46.99)
@@ -1950,6 +1938,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6b91bfa8-e6f6-4986-a2dc-0da860293cf7")
+	)
+	(junction
+		(at 355.6 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "761fe498-243d-40e5-a705-a4f7928f9d3e")
 	)
 	(junction
 		(at 200.66 54.61)
@@ -2034,6 +2028,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4bb6cd6-ee59-4969-aa26-207a8cb90371")
+	)
+	(junction
+		(at 383.54 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c939fcb5-a3b6-47f7-903e-99f42169dd75")
 	)
 	(junction
 		(at 389.89 27.94)
@@ -2235,13 +2235,33 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 104.14) (xy 340.36 105.41)
+			(xy 363.22 91.44) (xy 363.22 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b3ce936-99c6-47ed-be57-274e80513439")
+	)
+	(wire
+		(pts
+			(xy 341.63 109.22) (xy 341.63 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1bc2beaa-3489-4db7-a783-c2f36ae233f8")
+	)
+	(wire
+		(pts
+			(xy 355.6 107.95) (xy 355.6 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fb8a65e-8cfc-4d4b-8073-c64fbda7e993")
 	)
 	(wire
 		(pts
@@ -2275,16 +2295,6 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 91.44) (xy 340.36 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21192186-4bee-4d19-8375-43ba9753f342")
-	)
-	(wire
-		(pts
 			(xy 200.66 54.61) (xy 200.66 57.15)
 		)
 		(stroke
@@ -2312,16 +2322,6 @@
 			(type default)
 		)
 		(uuid "261bb410-1b82-4055-bd06-167dc26ca765")
-	)
-	(wire
-		(pts
-			(xy 383.54 91.44) (xy 383.54 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "274a4e21-10ea-467f-a196-98f1843cf2ea")
 	)
 	(wire
 		(pts
@@ -2505,6 +2505,16 @@
 	)
 	(wire
 		(pts
+			(xy 394.97 91.44) (xy 392.43 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45ff24e2-6a54-499b-9292-090e5bc152a1")
+	)
+	(wire
+		(pts
 			(xy 36.83 134.62) (xy 60.96 134.62)
 		)
 		(stroke
@@ -2565,7 +2575,7 @@
 	)
 	(wire
 		(pts
-			(xy 355.6 87.63) (xy 355.6 91.44)
+			(xy 355.6 87.63) (xy 355.6 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2635,6 +2645,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 91.44) (xy 363.22 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d3482ac-65b0-4e44-8b34-6d3f024e82bf")
+	)
+	(wire
+		(pts
 			(xy 281.94 53.34) (xy 284.48 53.34)
 		)
 		(stroke
@@ -2665,7 +2685,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 87.63) (xy 328.93 91.44)
+			(xy 328.93 87.63) (xy 328.93 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2692,6 +2712,16 @@
 			(type default)
 		)
 		(uuid "65b261a6-bc3d-4955-b7ae-8044cf2a90cd")
+	)
+	(wire
+		(pts
+			(xy 383.54 110.49) (xy 383.54 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "672f8485-08cf-45e2-a636-2468769775b1")
 	)
 	(wire
 		(pts
@@ -2795,13 +2825,23 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 96.52) (xy 340.36 91.44)
+			(xy 341.63 101.6) (xy 341.63 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "78f32928-d604-47e4-8c88-1fb8e1135011")
+	)
+	(wire
+		(pts
+			(xy 383.54 109.22) (xy 392.43 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "793e737e-36c3-4ce5-9ceb-0e284ffe767d")
 	)
 	(wire
 		(pts
@@ -3035,26 +3075,6 @@
 	)
 	(wire
 		(pts
-			(xy 355.6 91.44) (xy 355.6 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac30ed83-6d98-4c44-b019-0717382e26e2")
-	)
-	(wire
-		(pts
-			(xy 355.6 91.44) (xy 367.03 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b00d46f9-25b8-4f3d-8465-9f7c7dc192b5")
-	)
-	(wire
-		(pts
 			(xy 36.83 24.13) (xy 60.96 24.13)
 		)
 		(stroke
@@ -3135,6 +3155,16 @@
 	)
 	(wire
 		(pts
+			(xy 383.54 109.22) (xy 383.54 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd2e30bd-4073-4307-bc2b-54030a5411d2")
+	)
+	(wire
+		(pts
 			(xy 36.83 171.45) (xy 36.83 190.5)
 		)
 		(stroke
@@ -3142,16 +3172,6 @@
 			(type default)
 		)
 		(uuid "bd9b1150-b972-4fe1-b838-173eb624a3de")
-	)
-	(wire
-		(pts
-			(xy 383.54 91.44) (xy 394.97 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf1947f8-b663-416c-a4ac-0041e5ff7660")
 	)
 	(wire
 		(pts
@@ -3182,16 +3202,6 @@
 			(type default)
 		)
 		(uuid "c389cf91-35cc-4306-84e3-b6e3fae327d2")
-	)
-	(wire
-		(pts
-			(xy 328.93 91.44) (xy 328.93 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c40e2219-dcd9-4261-858d-a207031f3106")
 	)
 	(wire
 		(pts
@@ -3282,6 +3292,16 @@
 			(type default)
 		)
 		(uuid "d1f9d3a1-4ee9-456b-a5b2-ac4107886838")
+	)
+	(wire
+		(pts
+			(xy 328.93 104.14) (xy 328.93 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2f4d7b7-6295-4f27-bfe3-fa4f66f74358")
 	)
 	(wire
 		(pts
@@ -3395,6 +3415,16 @@
 	)
 	(wire
 		(pts
+			(xy 337.82 96.52) (xy 337.82 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcc6d7bf-c52d-4839-a53e-f4c9592f0fae")
+	)
+	(wire
+		(pts
 			(xy 281.94 55.88) (xy 281.94 53.34)
 		)
 		(stroke
@@ -3402,6 +3432,16 @@
 			(type default)
 		)
 		(uuid "dd29bb34-a8dd-4416-9692-9015197aabcb")
+	)
+	(wire
+		(pts
+			(xy 337.82 104.14) (xy 328.93 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd4c230c-5490-4123-9842-6feccd48e1c2")
 	)
 	(wire
 		(pts
@@ -3515,7 +3555,17 @@
 	)
 	(wire
 		(pts
-			(xy 383.54 87.63) (xy 383.54 91.44)
+			(xy 341.63 96.52) (xy 337.82 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb87be4c-3884-4739-b8af-5a098f23f9bc")
+	)
+	(wire
+		(pts
+			(xy 383.54 87.63) (xy 383.54 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3585,6 +3635,16 @@
 	)
 	(wire
 		(pts
+			(xy 355.6 107.95) (xy 363.22 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f70f4895-0451-422e-8659-668a42ede10b")
+	)
+	(wire
+		(pts
 			(xy 365.76 46.99) (xy 368.3 46.99)
 		)
 		(stroke
@@ -3592,6 +3652,16 @@
 			(type default)
 		)
 		(uuid "fbd02f44-6205-4135-b296-2706bc13ef15")
+	)
+	(wire
+		(pts
+			(xy 392.43 91.44) (xy 392.43 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc9d8dbc-a788-427d-80bf-4292590eda64")
 	)
 	(wire
 		(pts
@@ -4021,7 +4091,7 @@
 	)
 	(global_label "2.5V"
 		(shape output)
-		(at 340.36 105.41 270)
+		(at 341.63 110.49 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4031,7 +4101,7 @@
 		)
 		(uuid "9e555106-126a-4d9b-a9fa-a9a2e8e30240")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 340.36 112.5076 90)
+			(at 341.63 117.5876 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4279,7 +4349,7 @@
 				)
 			)
 		)
-		(property "Value" "LM358"
+		(property "Value" "TL072"
 			(at 91.44 90.17 0)
 			(effects
 				(font
@@ -4450,7 +4520,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 340.36 100.33 0)
+		(at 341.63 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4458,7 +4528,7 @@
 		(dnp no)
 		(uuid "11346983-9969-4378-82fb-c5ae9aa9450f")
 		(property "Reference" "C1"
-			(at 345.821 99.187 0)
+			(at 347.091 104.267 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4466,7 +4536,7 @@
 			)
 		)
 		(property "Value" "0.1uf"
-			(at 346.075 101.981 0)
+			(at 347.345 107.061 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4474,7 +4544,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 341.3252 104.14 0)
+			(at 342.5952 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4483,7 +4553,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 340.36 100.33 0)
+			(at 341.63 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4492,7 +4562,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 340.36 100.33 0)
+			(at 341.63 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4726,7 +4796,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 331.47 101.6 0)
+		(at 331.47 96.52 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4735,7 +4805,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a6f74f2-4188-4770-8541-14ba1b6e1151")
 		(property "Reference" "U1"
-			(at 330.2 100.3299 0)
+			(at 330.2 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4743,8 +4813,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LM358"
-			(at 330.2 102.8699 0)
+		(property "Value" "TL072"
+			(at 330.2 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4753,7 +4823,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 331.47 101.6 0)
+			(at 331.47 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4762,7 +4832,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 331.47 101.6 0)
+			(at 331.47 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4771,7 +4841,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 331.47 101.6 0)
+			(at 331.47 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4780,7 +4850,7 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 331.47 101.6 0)
+			(at 331.47 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4789,7 +4859,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 331.47 101.6 0)
+			(at 331.47 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4798,7 +4868,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 331.47 101.6 0)
+			(at 331.47 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4807,7 +4877,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 331.47 101.6 0)
+			(at 331.47 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5194,7 +5264,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 383.54 109.22 0)
+		(at 383.54 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5202,7 +5272,7 @@
 		(dnp no)
 		(uuid "2b2a348c-c943-45bc-8cd1-a98001759c69")
 		(property "Reference" "#PWR017"
-			(at 383.54 115.57 0)
+			(at 383.54 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5211,7 +5281,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 383.54 114.3 0)
+			(at 383.54 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5219,7 +5289,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 383.54 109.22 0)
+			(at 383.54 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5228,7 +5298,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 383.54 109.22 0)
+			(at 383.54 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5237,7 +5307,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 383.54 109.22 0)
+			(at 383.54 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5742,7 +5812,7 @@
 				)
 			)
 		)
-		(property "Value" "LM358"
+		(property "Value" "TL072"
 			(at 91.44 129.54 0)
 			(effects
 				(font
@@ -6708,7 +6778,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BreadModular_OPT1:Potentiometer_RV09"
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 36.83 101.6 0)
 			(effects
 				(font
@@ -6806,7 +6876,7 @@
 				)
 			)
 		)
-		(property "Value" "LM358"
+		(property "Value" "TL072"
 			(at 91.44 166.37 0)
 			(effects
 				(font
@@ -7170,7 +7240,7 @@
 				)
 			)
 		)
-		(property "Value" "LM358"
+		(property "Value" "TL072"
 			(at 180.34 46.99 0)
 			(effects
 				(font
@@ -7300,7 +7370,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BreadModular_OPT1:Potentiometer_RV09"
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 36.83 68.58 0)
 			(effects
 				(font
@@ -7398,7 +7468,7 @@
 				)
 			)
 		)
-		(property "Value" "LM358"
+		(property "Value" "TL072"
 			(at 91.44 19.05 0)
 			(effects
 				(font
@@ -7742,7 +7812,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BreadModular_OPT1:Potentiometer_RV09"
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 36.83 30.48 0)
 			(effects
 				(font
@@ -7824,7 +7894,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 358.14 101.6 0)
+		(at 358.14 100.33 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7833,7 +7903,7 @@
 		(fields_autoplaced yes)
 		(uuid "b0994ab7-bac6-4c6d-829b-2cdbe15b160d")
 		(property "Reference" "U2"
-			(at 356.87 100.3299 0)
+			(at 356.87 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7841,8 +7911,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LM358"
-			(at 356.87 102.8699 0)
+		(property "Value" "TL072"
+			(at 356.87 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7851,7 +7921,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 358.14 101.6 0)
+			(at 358.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7860,7 +7930,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 358.14 101.6 0)
+			(at 358.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7869,7 +7939,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 358.14 101.6 0)
+			(at 358.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7878,7 +7948,7 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 358.14 101.6 0)
+			(at 358.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7887,7 +7957,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 358.14 101.6 0)
+			(at 358.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7896,7 +7966,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 358.14 101.6 0)
+			(at 358.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7905,7 +7975,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 358.14 101.6 0)
+			(at 358.14 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7948,7 +8018,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 386.08 101.6 0)
+		(at 386.08 100.33 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7957,7 +8027,7 @@
 		(fields_autoplaced yes)
 		(uuid "b36d9e84-e2b2-4956-89c0-72c6964a4d28")
 		(property "Reference" "U3"
-			(at 384.81 100.3299 0)
+			(at 384.81 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7965,8 +8035,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LM358"
-			(at 384.81 102.8699 0)
+		(property "Value" "TL072"
+			(at 384.81 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7975,7 +8045,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 386.08 101.6 0)
+			(at 386.08 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7984,7 +8054,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 386.08 101.6 0)
+			(at 386.08 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7993,7 +8063,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 386.08 101.6 0)
+			(at 386.08 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8002,7 +8072,7 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 386.08 101.6 0)
+			(at 386.08 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8011,7 +8081,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 386.08 101.6 0)
+			(at 386.08 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8020,7 +8090,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 386.08 101.6 0)
+			(at 386.08 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8029,7 +8099,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 386.08 101.6 0)
+			(at 386.08 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8155,7 +8225,7 @@
 				)
 			)
 		)
-		(property "Value" "LM358"
+		(property "Value" "TL072"
 			(at 91.44 57.15 0)
 			(effects
 				(font
@@ -8560,7 +8630,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BreadModular_OPT1:Potentiometer_RV09"
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 36.83 140.97 0)
 			(effects
 				(font
