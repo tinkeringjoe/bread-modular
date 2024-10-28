@@ -3737,7 +3737,7 @@
 			)
 		)
 	)
-	(global_label "IN_1"
+	(global_label "IN_2"
 		(shape input)
 		(at 334.01 139.7 90)
 		(fields_autoplaced yes)
@@ -4309,7 +4309,7 @@
 			)
 		)
 	)
-	(global_label "IN_2"
+	(global_label "IN_4"
 		(shape input)
 		(at 354.33 139.7 90)
 		(fields_autoplaced yes)
@@ -6832,7 +6832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "pos=0.8"
+		(property "Sim.Params" "pos=1.0"
 			(at 36.83 110.236 90)
 			(effects
 				(font
@@ -7424,7 +7424,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "pos=0.5"
+		(property "Sim.Params" "pos=0.0"
 			(at 36.83 77.216 90)
 			(effects
 				(font
@@ -7866,7 +7866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "pos=0.8"
+		(property "Sim.Params" "pos=0.0"
 			(at 36.83 39.116 90)
 			(effects
 				(font
@@ -8684,7 +8684,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "pos=0.8"
+		(property "Sim.Params" "pos=0"
 			(at 36.83 149.606 90)
 			(effects
 				(font

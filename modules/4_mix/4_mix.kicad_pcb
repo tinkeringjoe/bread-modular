@@ -3505,7 +3505,7 @@
 				)
 			)
 		)
-		(property "Value" "TL072"
+		(property "Value" "MCP6002"
 			(at 0 3.4 0)
 			(layer "F.Fab")
 			(uuid "d49bbdfe-73a1-454c-98a5-cdbbc023a5b9")
@@ -3908,7 +3908,7 @@
 				)
 			)
 		)
-		(property "Value" "TL072"
+		(property "Value" "MCP6002"
 			(at 0 3.4 0)
 			(layer "F.Fab")
 			(uuid "743c032c-dd62-447c-931f-774cbddcecad")
@@ -6105,7 +6105,7 @@
 				)
 			)
 		)
-		(property "Value" "TL072"
+		(property "Value" "MCP6002"
 			(at 0 3.4 0)
 			(layer "F.Fab")
 			(uuid "35d2743e-b4d9-4bd2-b860-9f0f95296466")
