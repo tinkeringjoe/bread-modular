@@ -21,25 +21,6 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(78, 252, 87)",
-          "cursor1": {
-            "position": 0.00924223602484472,
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "cursor2": {
-            "position": 0.009801242236024844,
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "signal": "V(JFET_OUT)",
-          "trace_type": 257
-        },
-        {
           "color": "rgb(255, 127, 0)",
           "signal": "V(V_IN)",
           "trace_type": 257
