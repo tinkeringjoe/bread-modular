@@ -1,5 +1,9 @@
 #ChangeLog
 
+## 0.3.1
+Add some missing production files.
+Does not contain feature or bug fixes.
+
 ## 0.3.0
 Use MCP6002
 This is a rail-to-rail opamp. So, we have more heae
