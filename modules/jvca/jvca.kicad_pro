@@ -235,7 +235,11 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "pin_not_connected|698500|533400|20cdf894-7d08-4522-ab2b-9f47bef2b142|00000000-0000-0000-0000-000000000000|/b63493d3-5f6d-47e3-845b-87e7090fc1ab|/b63493d3-5f6d-47e3-845b-87e7090fc1ab|",
+      "power_pin_not_driven|1447800|647700|d15307f5-41b8-4bc1-bc54-d3d460daaf69|00000000-0000-0000-0000-000000000000|/b63493d3-5f6d-47e3-845b-87e7090fc1ab|/b63493d3-5f6d-47e3-845b-87e7090fc1ab|",
+      "power_pin_not_driven|965200|635000|ba0e8cb3-b553-4451-89bb-8b52b640d619|00000000-0000-0000-0000-000000000000|/b63493d3-5f6d-47e3-845b-87e7090fc1ab|/b63493d3-5f6d-47e3-845b-87e7090fc1ab|"
+    ],
     "meta": {
       "version": 0
     },
@@ -600,7 +604,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": "jvca.wbk"
+      "workbook_filename": "jvca_ctrl.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
