@@ -4,7 +4,7 @@
     {
       "analysis": "TRAN",
       "commands": [
-        ".tran 10m 200m",
+        ".tran 10m 100m",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -26,7 +26,7 @@
           "trace_type": 257
         },
         {
-          "color": "rgb(77, 175, 74)",
+          "color": "rgb(55, 126, 184)",
           "signal": "V(JFET_CV)",
           "trace_type": 257
         }
@@ -35,7 +35,7 @@
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 10 1 50",
+        ".ac dec 10 100m 50",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",

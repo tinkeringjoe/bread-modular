@@ -6538,7 +6538,7 @@
 		(lib_id "Amplifier_Operational:MCP6002-xSN")
 		(at 125.73 160.02 0)
 		(unit 2)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
