@@ -10071,6 +10071,19 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "BASE\n0.1.0"
+		(at 233.68 175.26 0)
+		(layer "F.SilkS")
+		(uuid "920cabf9-df98-4608-ba07-481b4282578d")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify right bottom)
+		)
+	)
 	(gr_text "GND"
 		(at 241.935 35.56 90)
 		(layer "F.SilkS")
