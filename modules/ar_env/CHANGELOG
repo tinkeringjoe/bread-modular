@@ -1,4 +1,8 @@
 # Changelog
 
+## 0.1.1
+Used 0603 package for 6.8k resistor because that part is
+easily available in the JLCPCB basic library.
+
 ## 0.1.0
 Initial Release
