@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.2
+Remove solder-mask from the TypeC connector through-hole pins.
+
 ## 0.1.1
 Changed the orientation of the USB-C port.
 
