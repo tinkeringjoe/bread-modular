@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.1
+Add two Jack sockets each POWER & GND. So, we can cascase if we needed.
+
 ## 0.2.0
 Add 3.5mm Jack socket for Power & GND delivery between boards.
 
