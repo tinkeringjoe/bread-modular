@@ -1,4 +1,10 @@
 # Changelog
 
+## 0.2.0
+Add 3.5mm Jack socket for Power & GND delivery between boards.
+
+* Power: Share both 5V & GND between two boards.
+* GND: Share only GND between boards
+
 ## 0.1.0
 Initial Release
