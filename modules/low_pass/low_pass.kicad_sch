@@ -2846,16 +2846,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 101.6) (xy 57.15 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d84afd7-3e21-4541-9a6f-66703afda6e9")
-	)
-	(wire
-		(pts
 			(xy 87.63 265.43) (xy 66.04 265.43)
 		)
 		(stroke
@@ -3366,7 +3356,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 163.83) (xy 154.94 163.83)
+			(xy 142.24 163.83) (xy 152.4 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3866,6 +3856,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 163.83) (xy 167.64 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf493f61-9e5c-4117-92a3-1d0746ca8b50")
+	)
+	(wire
+		(pts
 			(xy 102.87 57.15) (xy 102.87 43.18)
 		)
 		(stroke
@@ -3896,7 +3896,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 101.6) (xy 45.72 101.6)
+			(xy 45.72 101.6) (xy 57.15 101.6)
 		)
 		(stroke
 			(width 0)
@@ -4225,6 +4225,28 @@
 			)
 		)
 	)
+	(global_label "CUTOFF_CV_IN"
+		(shape input)
+		(at 391.16 220.98 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1b2aa5cf-eddd-4f7b-9922-00bcf56d0b71")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 391.16 204.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "+2.5V"
 		(shape output)
 		(at 63.5 36.83 90)
@@ -4403,7 +4425,7 @@
 	)
 	(global_label "AUDIO_OUT"
 		(shape output)
-		(at 154.94 163.83 0)
+		(at 167.64 163.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4413,7 +4435,7 @@
 		)
 		(uuid "b05882d3-3ecc-427a-8479-64a1aab55572")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.1458 163.83 0)
+			(at 180.8458 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5419,6 +5441,74 @@
 			(project "blank"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 156.21 163.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31cc43d4-f5de-40ac-b6e5-a8b26db48934")
+		(property "Reference" "R9"
+			(at 156.21 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 156.21 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 156.21 165.608 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 156.21 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8542e088-ecd0-4778-8a3d-17500042478c")
+		)
+		(pin "2"
+			(uuid "3e443a61-cb42-43f0-a23a-65d99f5c5f08")
+		)
+		(instances
+			(project "low_pass"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -7004,7 +7094,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "pos=0.5"
+		(property "Sim.Params" "pos=0.9"
 			(at 30.48 57.15 90)
 			(effects
 				(font
@@ -7510,7 +7600,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a414f7f7-2342-4d20-a6df-846a1e3de2f5")
-		(property "Reference" "R9"
+		(property "Reference" "R8"
 			(at 69.85 129.54 90)
 			(effects
 				(font
@@ -7526,7 +7616,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 69.85 137.668 90)
 			(effects
 				(font
@@ -7562,7 +7652,7 @@
 		(instances
 			(project "low_pass"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "R9")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -7830,6 +7920,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 391.16 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afb78ed6-ea1d-4be9-a078-57730c2979b0")
+		(property "Reference" "#PWR020"
+			(at 391.16 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 391.16 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 391.16 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 391.16 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 391.16 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e5b71c8-7021-419b-aeec-c5c262ada758")
+		)
+		(instances
+			(project "low_pass"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 106.68 252.73 90)
 		(unit 1)
@@ -7855,7 +8010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 106.68 254.508 90)
 			(effects
 				(font
@@ -8100,33 +8255,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 52.07 101.6 90)
+		(lib_id "Simulation_SPICE:VDC")
+		(at 391.16 226.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c7c941e4-a31f-4ecd-a812-5385dea3d68e")
-		(property "Reference" "R8"
-			(at 52.07 95.25 90)
+		(uuid "c175c727-b0b6-449f-b0eb-ecbeb57dadeb")
+		(property "Reference" "V4"
+			(at 394.97 224.6601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "51k"
-			(at 52.07 97.79 90)
+		(property "Value" "0"
+			(at 394.97 227.2001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 52.07 103.378 90)
+		(property "Footprint" ""
+			(at 391.16 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8134,8 +8290,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 52.07 101.6 0)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 391.16 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8143,25 +8299,53 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 52.07 101.6 0)
+		(property "Description" "Voltage source, DC"
+			(at 391.16 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 391.16 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 391.16 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 391.16 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "615e5826-e320-4dbd-98fb-38cd01130a50")
+			(uuid "fe80018d-6e2a-4a85-8274-5103e6507700")
 		)
 		(pin "2"
-			(uuid "816ee905-4af8-4a61-806f-5506387a2f42")
+			(uuid "7088a833-668d-43c3-88f4-9ddeccf552a5")
 		)
 		(instances
 			(project "low_pass"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "R8")
+					(reference "V4")
 					(unit 1)
 				)
 			)
