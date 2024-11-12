@@ -2503,12 +2503,6 @@
 		(uuid "0acfe6ec-44f5-4fa4-af10-7ad266789321")
 	)
 	(junction
-		(at 62.23 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0bcc3b7e-e5b3-4f54-9c71-05bd55b5a3f0")
-	)
-	(junction
 		(at 66.04 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2567,6 +2561,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4cddd881-01bb-4595-9886-685b3a1b1fff")
+	)
+	(junction
+		(at 44.45 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "511ca880-6555-418b-8c81-642e8a20d131")
 	)
 	(junction
 		(at 54.61 250.19)
@@ -2645,6 +2645,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d2a57600-ed73-40cc-9ee5-9e5163bef725")
+	)
+	(junction
+		(at 64.77 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d331b4ae-2e10-4f05-90c9-3af81a584dce")
 	)
 	(junction
 		(at 87.63 252.73)
@@ -2816,7 +2822,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 104.14) (xy 62.23 106.68)
+			(xy 64.77 102.87) (xy 64.77 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2886,7 +2892,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 128.27) (xy 48.26 128.27)
+			(xy 59.69 128.27) (xy 48.26 128.27)
 		)
 		(stroke
 			(width 0)
@@ -2966,6 +2972,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 104.14) (xy 59.69 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38bff6da-8257-4054-9621-0f87c5de6f84")
+	)
+	(wire
+		(pts
 			(xy 40.64 128.27) (xy 48.26 128.27)
 		)
 		(stroke
@@ -2993,16 +3009,6 @@
 			(type default)
 		)
 		(uuid "431c8463-aace-4af6-85d5-f9b84b74e091")
-	)
-	(wire
-		(pts
-			(xy 308.61 227.33) (xy 312.42 227.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44d45fe4-f820-4a36-bf4b-f0ff185609a4")
 	)
 	(wire
 		(pts
@@ -3096,6 +3102,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 111.76) (xy 29.21 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57544a2a-d73a-49ca-9060-2ffec79f0ce7")
+	)
+	(wire
+		(pts
 			(xy 377.19 109.22) (xy 377.19 110.49)
 		)
 		(stroke
@@ -3126,7 +3142,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 121.92) (xy 57.15 128.27)
+			(xy 59.69 120.65) (xy 59.69 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3233,16 +3249,6 @@
 			(type default)
 		)
 		(uuid "6f89148a-6763-44cf-b93b-10b5e521f8d6")
-	)
-	(wire
-		(pts
-			(xy 284.48 238.76) (xy 284.48 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6feb16b5-f410-4c3b-97c2-af6da8b923fd")
 	)
 	(wire
 		(pts
@@ -3376,7 +3382,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 121.92) (xy 62.23 135.89)
+			(xy 64.77 120.65) (xy 64.77 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3446,13 +3452,33 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 101.6) (xy 57.15 106.68)
+			(xy 44.45 109.22) (xy 44.45 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94adf070-0651-47af-aabd-8d7ca624c5d3")
+	)
+	(wire
+		(pts
+			(xy 59.69 104.14) (xy 59.69 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "94c01d5b-2a9d-45a4-8deb-4698a1ffe520")
+	)
+	(wire
+		(pts
+			(xy 26.67 116.84) (xy 26.67 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95610d32-d62c-461c-aa30-c70166adb45c")
 	)
 	(wire
 		(pts
@@ -3616,16 +3642,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 135.89) (xy 66.04 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad2a480f-75e5-4178-bf1d-ce6ac15ffcf1")
-	)
-	(wire
-		(pts
 			(xy 102.87 43.18) (xy 105.41 43.18)
 		)
 		(stroke
@@ -3686,13 +3702,13 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 101.6) (xy 38.1 101.6)
+			(xy 64.77 135.89) (xy 66.04 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b6bc5a12-526c-4452-9a05-f8f917e9a026")
+		(uuid "b4a93f93-a67a-44b1-aa0b-e5b9afd67f60")
 	)
 	(wire
 		(pts
@@ -3726,7 +3742,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 135.89) (xy 62.23 135.89)
+			(xy 52.07 135.89) (xy 64.77 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3786,13 +3802,13 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 229.87) (xy 293.37 229.87)
+			(xy 46.99 104.14) (xy 44.45 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c4c80b3e-e69f-42c5-9860-d02a97888aad")
+		(uuid "c5d7b554-7c48-4448-b705-ab65315cca28")
 	)
 	(wire
 		(pts
@@ -3896,16 +3912,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 101.6) (xy 57.15 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5c7d4d5-7052-4818-9dd5-796c540b0650")
-	)
-	(wire
-		(pts
 			(xy 325.12 124.46) (xy 317.5 124.46)
 		)
 		(stroke
@@ -3923,26 +3929,6 @@
 			(type default)
 		)
 		(uuid "d830cbfd-403b-4ef8-806e-e1d8196fae55")
-	)
-	(wire
-		(pts
-			(xy 312.42 227.33) (xy 312.42 238.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8822139-2972-4804-aadc-abeccf588124")
-	)
-	(wire
-		(pts
-			(xy 312.42 238.76) (xy 284.48 238.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d937c68a-6b9b-4fd3-a6b4-9b732c59777b")
 	)
 	(wire
 		(pts
@@ -4016,6 +4002,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 104.14) (xy 44.45 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee1a0aa2-f736-4e20-941b-b6549d3bf1e1")
+	)
+	(wire
+		(pts
 			(xy 66.04 45.72) (xy 67.31 45.72)
 		)
 		(stroke
@@ -4043,6 +4039,16 @@
 			(type default)
 		)
 		(uuid "f09a9c5b-0391-4249-9085-13c278ee805b")
+	)
+	(wire
+		(pts
+			(xy 44.45 116.84) (xy 26.67 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e406c2-a060-4c36-87dc-2369c7642465")
 	)
 	(wire
 		(pts
@@ -4106,7 +4112,7 @@
 	)
 	(text "## 3. Cut Of freqeuncy\n\nCutOff frequency of Sallen Key Filter is depend on the R1 and R2.\nThey need to be equal too.\nHere we set R1 based on VTL5C. \nSo it behaves based on the Voltage input for the LED.\nWe set 2.5V as the base potentiometer is used to change the frequency.\n\npos=0.0 is the minimum frequency.\npos=1.0 is maximum freq."
 		(exclude_from_sim no)
-		(at 74.93 122.174 0)
+		(at 87.122 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4315,7 +4321,7 @@
 	)
 	(global_label "CUTOFF_CV_IN"
 		(shape input)
-		(at 33.02 101.6 180)
+		(at 29.21 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4325,7 +4331,7 @@
 		)
 		(uuid "4e119f40-f2af-4a99-8e68-40036cbb58fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.7299 101.6 0)
+			(at 12.9199 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5276,7 +5282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "pos=0.5"
+		(property "Sim.Params" "pos=0.2"
 			(at 48.514 146.812 90)
 			(effects
 				(font
@@ -5842,7 +5848,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 300.99 227.33 0)
+		(at 36.83 109.22 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5851,7 +5857,7 @@
 		(fields_autoplaced yes)
 		(uuid "52632b52-2965-4fb5-9a18-64ca12f18dc9")
 		(property "Reference" "U4"
-			(at 300.99 217.17 0)
+			(at 36.83 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5859,7 +5865,7 @@
 			)
 		)
 		(property "Value" "MCP6002-xSN"
-			(at 300.99 219.71 0)
+			(at 36.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5867,7 +5873,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 300.99 227.33 0)
+			(at 36.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5876,7 +5882,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 300.99 227.33 0)
+			(at 36.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5885,7 +5891,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 300.99 227.33 0)
+			(at 36.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5894,7 +5900,7 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD8_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 300.99 227.33 0)
+			(at 36.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5903,7 +5909,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 300.99 227.33 0)
+			(at 36.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5912,7 +5918,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 300.99 227.33 0)
+			(at 36.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5921,7 +5927,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 300.99 227.33 0)
+			(at 36.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6652,7 +6658,7 @@
 	)
 	(symbol
 		(lib_id "Isolator:VTL5C")
-		(at 59.69 114.3 270)
+		(at 62.23 113.03 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6660,7 +6666,7 @@
 		(dnp no)
 		(uuid "7a2ecc69-d421-4896-b874-17a9136ebab6")
 		(property "Reference" "U2"
-			(at 50.8 111.76 0)
+			(at 53.34 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6669,7 +6675,7 @@
 			)
 		)
 		(property "Value" "VTL5C"
-			(at 53.34 111.76 0)
+			(at 55.88 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6678,7 +6684,7 @@
 			)
 		)
 		(property "Footprint" "BreadModular_MISC:VTL5C"
-			(at 59.69 114.3 0)
+			(at 62.23 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6687,7 +6693,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.qsl.net/wa1ion/vactrol/vactrol.pdf"
-			(at 53.34 115.57 0)
+			(at 55.88 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6696,7 +6702,7 @@
 			)
 		)
 		(property "Description" "Low Cost Axial Vactrols"
-			(at 59.69 114.3 0)
+			(at 62.23 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6705,7 +6711,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 59.69 114.3 0)
+			(at 62.23 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6714,7 +6720,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=2 2=1 3=3 4=4"
-			(at 59.69 114.3 0)
+			(at 62.23 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6723,7 +6729,7 @@
 			)
 		)
 		(property "Sim.Library" "/Users/arunoda/data/projects/kicad-splice-models/VTL5C.lib"
-			(at 59.69 114.3 0)
+			(at 62.23 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6732,7 +6738,7 @@
 			)
 		)
 		(property "Sim.Name" "VTL5C"
-			(at 59.69 114.3 0)
+			(at 62.23 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7130,7 +7136,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 62.23 104.14 180)
+		(at 64.77 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7138,7 +7144,7 @@
 		(dnp no)
 		(uuid "8fa8eeae-5488-4f28-a2d8-3d52a633b507")
 		(property "Reference" "#PWR05"
-			(at 62.23 97.79 0)
+			(at 64.77 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7147,7 +7153,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 62.23 99.06 0)
+			(at 64.77 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7155,7 +7161,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 104.14 0)
+			(at 64.77 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7164,7 +7170,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 104.14 0)
+			(at 64.77 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7173,7 +7179,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 62.23 104.14 0)
+			(at 64.77 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7660,7 +7666,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 41.91 101.6 90)
+		(at 50.8 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7669,7 +7675,7 @@
 		(fields_autoplaced yes)
 		(uuid "a55a9ea3-1692-4459-adcd-124bff654602")
 		(property "Reference" "R7"
-			(at 41.91 95.25 90)
+			(at 50.8 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7677,7 +7683,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 41.91 97.79 90)
+			(at 50.8 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7685,7 +7691,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 41.91 103.378 90)
+			(at 50.8 105.918 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7694,7 +7700,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 41.91 101.6 0)
+			(at 50.8 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7703,7 +7709,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 41.91 101.6 0)
+			(at 50.8 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
