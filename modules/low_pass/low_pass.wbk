@@ -26,8 +26,8 @@
           "trace_type": 257
         },
         {
-          "color": "rgb(55, 126, 184)",
-          "signal": "V(V_OUT)",
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(AUDIO_OUT)",
           "trace_type": 257
         }
       ]
