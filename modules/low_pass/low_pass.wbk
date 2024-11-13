@@ -21,11 +21,6 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(175, 156, 6)",
-          "signal": "V(AUDIO_IN)",
-          "trace_type": 257
-        },
-        {
           "color": "rgb(228, 26, 28)",
           "signal": "V(AUDIO_OUT)",
           "trace_type": 257
