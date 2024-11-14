@@ -3857,7 +3857,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 110.49 75.438 90)
 			(effects
 				(font
@@ -3925,7 +3925,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 241.3 79.248 90)
 			(effects
 				(font
@@ -4093,7 +4093,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 220.6752 109.22 0)
 			(effects
 				(font
@@ -4516,7 +4516,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 127 160.528 90)
 			(effects
 				(font
@@ -4651,7 +4651,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OptoDevice:PerkinElmer_VTL5C"
+		(property "Footprint" "BreadModular_MISC:VTL5C"
 			(at 99.06 66.04 0)
 			(effects
 				(font
@@ -4999,7 +4999,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 217.17 104.14 0)
 			(effects
 				(font
@@ -5316,7 +5316,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 129.54 85.598 90)
 			(effects
 				(font
@@ -5384,7 +5384,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 107.95 150.368 90)
 			(effects
 				(font
@@ -5583,7 +5583,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 267.97 104.14 0)
 			(effects
 				(font
@@ -5705,7 +5705,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 66.04 73.66 0)
 			(effects
 				(font
@@ -5894,7 +5894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 248.6152 107.95 0)
 			(effects
 				(font
@@ -5962,7 +5962,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 90.17 44.958 90)
 			(effects
 				(font
@@ -6160,7 +6160,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 73.66 49.53 0)
 			(effects
 				(font
@@ -6344,7 +6344,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 71.12 124.46 0)
 			(effects
 				(font
@@ -6450,7 +6450,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 148.59 147.828 90)
 			(effects
 				(font
@@ -6518,7 +6518,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 129.54 71.12 0)
 			(effects
 				(font
@@ -6835,7 +6835,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 256.54 79.248 90)
 			(effects
 				(font
@@ -6903,7 +6903,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 48.26 124.46 0)
 			(effects
 				(font
@@ -7026,7 +7026,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 242.57 104.14 0)
 			(effects
 				(font
@@ -7226,7 +7226,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 151.13 72.898 90)
 			(effects
 				(font
@@ -7294,7 +7294,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 48.26 49.53 0)
 			(effects
 				(font
@@ -7416,7 +7416,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 87.63 119.888 90)
 			(effects
 				(font
@@ -7485,7 +7485,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OptoDevice:PerkinElmer_VTL5C"
+		(property "Footprint" "BreadModular_MISC:VTL5C"
 			(at 96.52 140.97 0)
 			(effects
 				(font
@@ -7595,7 +7595,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 66.04 158.75 0)
 			(effects
 				(font
@@ -7785,7 +7785,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 274.0152 107.95 0)
 			(effects
 				(font
@@ -8102,7 +8102,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 127 146.05 0)
 			(effects
 				(font
