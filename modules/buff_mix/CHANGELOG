@@ -1,0 +1,8 @@
+# Changelog
+
+## 0.2.0
+Changed to have dual buffered mixers.
+Now we don't use capacitors to do the biasing.
+
+## 0.1.0
+Initial Release
