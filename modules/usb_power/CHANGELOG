@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0
+Now we are using a 3.3V regulator. Added a LED and a switch. 
+With this, we are trying to run our setup using 3.3V.
+The idea is to use USB-C as the sole power setup.
+
 ## 0.1.2
 Remove solder-mask from the TypeC connector through-hole pins.
 
