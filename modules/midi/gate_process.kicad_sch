@@ -1789,100 +1789,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 123.19 105.41 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41ece57b-cd12-42b5-a515-7f6f3f2283d0")
-		(property "Reference" "U3"
-			(at 123.19 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP6002-xSN"
-			(at 123.19 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 123.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 123.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 123.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "6bcbf075-7c4a-4880-8717-d83f51652639")
-		)
-		(pin "1"
-			(uuid "677ac50c-0233-4142-866a-526cc49adc19")
-		)
-		(pin "2"
-			(uuid "e63b50c2-cc19-4eda-830b-775c8b62ee46")
-		)
-		(pin "7"
-			(uuid "0c3c3869-2a6a-43e5-ae91-0d304eec8e23")
-		)
-		(pin "5"
-			(uuid "37cf8ae6-bfa9-457f-b78f-06fb6c3623ea")
-		)
-		(pin "4"
-			(uuid "56ca766d-3888-4ba1-8b4c-d6a845141f2d")
-		)
-		(pin "6"
-			(uuid "2b545c20-2f91-46ed-8e40-7db8934fe5e0")
-		)
-		(pin "3"
-			(uuid "4ac40c1c-94ea-460d-89ef-fc5cee5f2d07")
-		)
-		(instances
-			(project "midi"
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
-					(reference "U5")
-					(unit 2)
-				)
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
-					(reference "U3")
-					(unit 2)
-				)
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
-					(reference "U4")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 138.43 59.69 90)
 		(unit 1)
@@ -1963,102 +1869,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 217.17 73.66 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63087ec2-4d97-4626-a458-ae3f3816c573")
-		(property "Reference" "U3"
-			(at 215.9 72.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP6002-xSN"
-			(at 215.9 74.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 217.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 217.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 217.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "02a605d7-d728-4392-a1f5-336cd8c7d07e")
-		)
-		(pin "1"
-			(uuid "677ac50c-0233-4142-866a-526cc49adc1a")
-		)
-		(pin "2"
-			(uuid "e63b50c2-cc19-4eda-830b-775c8b62ee47")
-		)
-		(pin "7"
-			(uuid "08d54338-ada8-468a-8863-4792ee3775aa")
-		)
-		(pin "5"
-			(uuid "235bdd67-e6de-4fb3-9e5c-197cb5508e44")
-		)
-		(pin "4"
-			(uuid "7b89ee6f-d837-4989-beb9-73105f6c497a")
-		)
-		(pin "6"
-			(uuid "a574f00a-8a66-4667-ae68-0f2019d6ed47")
-		)
-		(pin "3"
-			(uuid "4ac40c1c-94ea-460d-89ef-fc5cee5f2d08")
-		)
-		(instances
-			(project "midi"
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
-					(reference "U5")
-					(unit 3)
-				)
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
-					(reference "U3")
-					(unit 3)
-				)
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
-					(reference "U4")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 52.07 120.65 0)
 		(unit 1)
@@ -2132,6 +1942,106 @@
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
 					(reference "#PWR038")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6002-xSN")
+		(at 217.17 73.66 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b124a27-e0c4-4201-a0fd-e81157772aa4")
+		(property "Reference" "U2"
+			(at 215.9 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP6002-xSN"
+			(at 215.9 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 217.17 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 217.17 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
+			(at 217.17 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "eb03f906-f783-4117-b861-a269e670cfac")
+		)
+		(pin "1"
+			(uuid "677ac50c-0233-4142-866a-526cc49adc1a")
+		)
+		(pin "2"
+			(uuid "e63b50c2-cc19-4eda-830b-775c8b62ee47")
+		)
+		(pin "7"
+			(uuid "08d54338-ada8-468a-8863-4792ee3775aa")
+		)
+		(pin "5"
+			(uuid "235bdd67-e6de-4fb3-9e5c-197cb5508e44")
+		)
+		(pin "4"
+			(uuid "9b1ca2dd-788e-4709-b55d-316768b8ab9f")
+		)
+		(pin "6"
+			(uuid "a574f00a-8a66-4667-ae68-0f2019d6ed47")
+		)
+		(pin "3"
+			(uuid "4ac40c1c-94ea-460d-89ef-fc5cee5f2d08")
+		)
+		(instances
+			(project "midi"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
+					(reference "U2")
+					(unit 3)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "U5")
+					(unit 3)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "U3")
+					(unit 3)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "U4")
+					(unit 3)
 				)
 			)
 		)
@@ -2228,7 +2138,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f67405a-dcfc-4d7f-99cc-119ebf7732e7")
-		(property "Reference" "U3"
+		(property "Reference" "U5"
 			(at 120.65 49.53 0)
 			(effects
 				(font
@@ -2297,6 +2207,10 @@
 		)
 		(instances
 			(project "midi"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
+					(reference "U2")
+					(unit 1)
+				)
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
 					(reference "U5")
 					(unit 1)
@@ -2470,6 +2384,104 @@
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
 					(reference "R16")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6002-xSN")
+		(at 123.19 105.41 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3dd447c-7a2b-4c50-bfbd-a7e692fd6af5")
+		(property "Reference" "U2"
+			(at 123.19 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6002-xSN"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 123.19 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 123.19 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
+			(at 123.19 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "6bcbf075-7c4a-4880-8717-d83f51652639")
+		)
+		(pin "1"
+			(uuid "677ac50c-0233-4142-866a-526cc49adc19")
+		)
+		(pin "2"
+			(uuid "e63b50c2-cc19-4eda-830b-775c8b62ee46")
+		)
+		(pin "7"
+			(uuid "3d58aaf1-a6dc-493e-ba0a-e5a5afda44f7")
+		)
+		(pin "5"
+			(uuid "906660ea-01f1-41ac-b808-ffcae08f8fb6")
+		)
+		(pin "4"
+			(uuid "56ca766d-3888-4ba1-8b4c-d6a845141f2d")
+		)
+		(pin "6"
+			(uuid "e4090ad7-7ae7-4022-b20b-e22ab64bf617")
+		)
+		(pin "3"
+			(uuid "4ac40c1c-94ea-460d-89ef-fc5cee5f2d07")
+		)
+		(instances
+			(project "midi"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
+					(reference "U2")
+					(unit 2)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "U5")
+					(unit 2)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "U3")
+					(unit 2)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "U4")
+					(unit 2)
 				)
 			)
 		)
@@ -2730,7 +2742,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb3df146-eb55-491b-9692-fe95585751ab")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR041"
 			(at 54.61 80.01 0)
 			(effects
 				(font
@@ -2779,6 +2791,10 @@
 		)
 		(instances
 			(project "midi"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
+					(reference "#PWR0101")
+					(unit 1)
+				)
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
 					(reference "#PWR041")
 					(unit 1)
