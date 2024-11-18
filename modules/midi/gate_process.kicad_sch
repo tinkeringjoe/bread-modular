@@ -1149,16 +1149,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 82.55) (xy 214.63 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82ae4eea-5a10-41fc-8582-30198a67e7ec")
-	)
-	(wire
-		(pts
 			(xy 69.85 64.77) (xy 69.85 62.23)
 		)
 		(stroke
@@ -1246,6 +1236,16 @@
 			(type default)
 		)
 		(uuid "d12531f2-7654-4fb8-905b-3851e6d61639")
+	)
+	(wire
+		(pts
+			(xy 214.63 81.28) (xy 214.63 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5a5a976-5c7a-48c8-9560-6861f1158226")
 	)
 	(wire
 		(pts
@@ -1399,7 +1399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a64de49-0519-4dd5-bb41-452e0f03b9f1")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR022"
 			(at 214.63 67.31 0)
 			(effects
 				(font
@@ -1445,12 +1445,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "6382a4d1-16d9-4de5-b25b-1a9b54ef9a4b")
+			(uuid "0e95a6e0-afdc-468d-9ded-845cdd25fdf5")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
-					(reference "#PWR021")
+					(reference "#PWR022")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "#PWR040")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "#PWR028")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -1512,15 +1524,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "97540fc9-e856-48c2-a80d-a7a6b00ababe")
+			(uuid "5d03e4a9-b4ed-4d97-8d8b-ec99d5a7a75d")
 		)
 		(pin "2"
-			(uuid "de4a3776-7796-4b8d-88d8-e9415d1ff112")
+			(uuid "425c9d79-351c-49f0-8e91-f9f240786e9c")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
 					(reference "C7")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "C16")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "C10")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -1536,7 +1560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e5cc66d-0fdf-470b-aea9-cd33cd3c5e56")
-		(property "Reference" "C9"
+		(property "Reference" "C6"
 			(at 73.66 67.3099 0)
 			(effects
 				(font
@@ -1582,15 +1606,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "12709bab-655a-4407-a319-76acfd8feb0f")
+			(uuid "192b043b-1f55-4a38-8953-74fa58339b3a")
 		)
 		(pin "2"
-			(uuid "59f243b6-b12d-464e-9e62-f02618db2427")
+			(uuid "f8ee0b6b-a949-4565-867a-6b54664f763d")
 		)
 		(instances
-			(project ""
+			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
+					(reference "C6")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "C15")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
 					(reference "C9")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -1606,7 +1642,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a78d519-a4b7-4396-9928-e3f9a1f2372b")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR025"
 			(at 214.63 90.17 0)
 			(effects
 				(font
@@ -1651,12 +1687,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "8bb29760-aae3-429b-927a-9ee552a33a5b")
+			(uuid "ea117f1f-e171-4b87-ac84-031f6225a319")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
-					(reference "#PWR022")
+					(reference "#PWR025")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "#PWR043")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "#PWR031")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -1672,7 +1720,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3aa20d50-384c-4938-9a67-9798c9a6ca84")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR024"
 			(at 69.85 80.01 0)
 			(effects
 				(font
@@ -1717,13 +1765,119 @@
 			)
 		)
 		(pin "1"
-			(uuid "78491abc-9330-4a35-98e2-a38741eeb7b2")
+			(uuid "2005b7f3-f34e-49d0-bb52-aadccb01bc7b")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
-					(reference "#PWR020")
+					(reference "#PWR024")
 					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "#PWR042")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "#PWR030")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6002-xSN")
+		(at 123.19 105.41 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41ece57b-cd12-42b5-a515-7f6f3f2283d0")
+		(property "Reference" "U3"
+			(at 123.19 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6002-xSN"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 123.19 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 123.19 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
+			(at 123.19 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "6bcbf075-7c4a-4880-8717-d83f51652639")
+		)
+		(pin "1"
+			(uuid "677ac50c-0233-4142-866a-526cc49adc19")
+		)
+		(pin "2"
+			(uuid "e63b50c2-cc19-4eda-830b-775c8b62ee46")
+		)
+		(pin "7"
+			(uuid "0c3c3869-2a6a-43e5-ae91-0d304eec8e23")
+		)
+		(pin "5"
+			(uuid "37cf8ae6-bfa9-457f-b78f-06fb6c3623ea")
+		)
+		(pin "4"
+			(uuid "56ca766d-3888-4ba1-8b4c-d6a845141f2d")
+		)
+		(pin "6"
+			(uuid "2b545c20-2f91-46ed-8e40-7db8934fe5e0")
+		)
+		(pin "3"
+			(uuid "4ac40c1c-94ea-460d-89ef-fc5cee5f2d07")
+		)
+		(instances
+			(project "midi"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "U5")
+					(unit 2)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "U3")
+					(unit 2)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "U4")
+					(unit 2)
 				)
 			)
 		)
@@ -1782,16 +1936,124 @@
 			)
 		)
 		(pin "2"
-			(uuid "ed78c385-84de-45b7-a05c-12e16d56f2c7")
+			(uuid "cb6d8def-fcef-4fa6-96e8-bd5874687385")
 		)
 		(pin "1"
-			(uuid "adb94867-1d4c-4c18-ba8e-d4c87251a8e8")
+			(uuid "d17dc148-4fbc-44de-b9b6-724d5709898b")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
 					(reference "R6")
 					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "R18")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "R10")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6002-xSN")
+		(at 217.17 73.66 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63087ec2-4d97-4626-a458-ae3f3816c573")
+		(property "Reference" "U3"
+			(at 215.9 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP6002-xSN"
+			(at 215.9 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 217.17 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 217.17 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
+			(at 217.17 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "02a605d7-d728-4392-a1f5-336cd8c7d07e")
+		)
+		(pin "1"
+			(uuid "677ac50c-0233-4142-866a-526cc49adc1a")
+		)
+		(pin "2"
+			(uuid "e63b50c2-cc19-4eda-830b-775c8b62ee47")
+		)
+		(pin "7"
+			(uuid "08d54338-ada8-468a-8863-4792ee3775aa")
+		)
+		(pin "5"
+			(uuid "235bdd67-e6de-4fb3-9e5c-197cb5508e44")
+		)
+		(pin "4"
+			(uuid "7b89ee6f-d837-4989-beb9-73105f6c497a")
+		)
+		(pin "6"
+			(uuid "a574f00a-8a66-4667-ae68-0f2019d6ed47")
+		)
+		(pin "3"
+			(uuid "4ac40c1c-94ea-460d-89ef-fc5cee5f2d08")
+		)
+		(instances
+			(project "midi"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "U5")
+					(unit 3)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "U3")
+					(unit 3)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "U4")
+					(unit 3)
 				)
 			)
 		)
@@ -1806,7 +2068,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65f6b60c-95fc-49ff-82bf-818f7ad2db00")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR026"
 			(at 52.07 127 0)
 			(effects
 				(font
@@ -1851,12 +2113,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "82a9983d-bf14-440e-856d-8e7d2d119b75")
+			(uuid "8a1d446d-2f55-4aab-9273-81206300554c")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
-					(reference "#PWR023")
+					(reference "#PWR026")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "#PWR044")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "#PWR032")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -1872,7 +2146,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95f523fc-2d93-4d2e-af91-6d0103bbd6ec")
-		(property "Reference" "R9"
+		(property "Reference" "R5"
 			(at 57.15 55.8799 0)
 			(effects
 				(font
@@ -1918,15 +2192,121 @@
 			)
 		)
 		(pin "2"
-			(uuid "2326ef29-347a-436c-989b-cdf9fa773d65")
+			(uuid "8578915d-8ea8-4206-97dc-493b8943ce17")
 		)
 		(pin "1"
-			(uuid "3d52c670-2e37-4350-b0cd-e34212f36fb9")
+			(uuid "0c80084c-d715-435b-a637-7e4f81a7b9a8")
 		)
 		(instances
-			(project ""
+			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
+					(reference "R5")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "R17")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
 					(reference "R9")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6002-xSN")
+		(at 120.65 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f67405a-dcfc-4d7f-99cc-119ebf7732e7")
+		(property "Reference" "U3"
+			(at 120.65 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6002-xSN"
+			(at 120.65 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 120.65 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 120.65 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
+			(at 120.65 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "6bcbf075-7c4a-4880-8717-d83f5165263b")
+		)
+		(pin "1"
+			(uuid "afaa819b-938b-4183-a083-169f1e273a63")
+		)
+		(pin "2"
+			(uuid "0d8aac35-9551-45f2-a947-0df2d1319b53")
+		)
+		(pin "7"
+			(uuid "08d54338-ada8-468a-8863-4792ee3775ab")
+		)
+		(pin "5"
+			(uuid "235bdd67-e6de-4fb3-9e5c-197cb5508e45")
+		)
+		(pin "4"
+			(uuid "56ca766d-3888-4ba1-8b4c-d6a845141f2f")
+		)
+		(pin "6"
+			(uuid "a574f00a-8a66-4667-ae68-0f2019d6ed48")
+		)
+		(pin "3"
+			(uuid "333d82c5-4238-473c-ab78-892d4bb93be5")
+		)
+		(instances
+			(project "midi"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "U5")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "U3")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -1988,15 +2368,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "6cd74619-3f6c-4948-81aa-bb0b4e1257b4")
+			(uuid "c73092ed-15e0-42c2-b70c-4a2e08338b39")
 		)
 		(pin "1"
-			(uuid "d7515f1a-9cc9-4be4-a453-5b372d1c27cd")
+			(uuid "e95589a3-c3f0-4105-b9a3-cd20e39e35c2")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
 					(reference "D2")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "D8")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "D4")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -2012,7 +2404,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6534024-3c6d-45d8-9177-e12b829e6707")
-		(property "Reference" "R7"
+		(property "Reference" "R8"
 			(at 140.97 99.06 90)
 			(effects
 				(font
@@ -2056,15 +2448,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "473797f6-8f6d-415d-b789-3d1f33ef69c0")
+			(uuid "42393982-5855-4c73-bcf5-cda0aa22b154")
 		)
 		(pin "1"
-			(uuid "262e43ce-0b43-4608-9dac-fcd78652511c")
+			(uuid "a1a3aea0-a851-4f01-8732-8e2dd0a87551")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
-					(reference "R7")
+					(reference "R8")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "R20")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "R12")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -2080,7 +2484,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4b83ce9-8f38-4ebe-9040-9b26b95b0a1e")
-		(property "Reference" "D3"
+		(property "Reference" "D1"
 			(at 58.42 66.3574 90)
 			(effects
 				(font
@@ -2126,15 +2530,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "3dd2e33d-a333-4600-a436-2548e9648153")
+			(uuid "5ab122f4-cad4-4fe7-ae51-b7473c6507e4")
 		)
 		(pin "1"
-			(uuid "694826f4-e048-4a2d-9cbb-5fc595020788")
+			(uuid "2f1f7ddc-6f96-49d4-8372-8788cc9b67fc")
 		)
 		(instances
-			(project ""
+			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
+					(reference "D1")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "D7")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
 					(reference "D3")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -2150,7 +2566,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d537f915-689d-487c-8ec6-9e41b4322553")
-		(property "Reference" "R8"
+		(property "Reference" "R7"
 			(at 54.61 102.8699 0)
 			(effects
 				(font
@@ -2196,182 +2612,30 @@
 			)
 		)
 		(pin "2"
-			(uuid "3a0e9da7-e9e8-4fbd-857f-a6bcd86af5ff")
+			(uuid "0dfc1ba5-8213-4c95-b61b-9e1aa31169ed")
 		)
 		(pin "1"
-			(uuid "4bef4453-0225-474f-927f-018716c4dd07")
+			(uuid "88ab4790-2e01-472b-bb16-2cbcc4bd83ac")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
-					(reference "R8")
+					(reference "R7")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "R19")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "R11")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "R15")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 120.65 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e8e41d77-c4ff-4c1a-8928-07e9ac4c4184")
-		(property "Reference" "U3"
-			(at 120.65 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP6002-xSN"
-			(at 120.65 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 120.65 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 120.65 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 120.65 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "aa6499d6-8a08-498d-9ddb-8e7f6bbd3f80")
-		)
-		(pin "7"
-			(uuid "55d65346-033f-467b-b827-3c4e5fdeade2")
-		)
-		(pin "4"
-			(uuid "082883f8-a2e5-43c0-a4bb-9b2edf284beb")
-		)
-		(pin "8"
-			(uuid "cd4912c7-4d73-4a72-a1ec-efde48aae86b")
-		)
-		(pin "5"
-			(uuid "5bd09dbe-3de6-4cb4-a14a-7c2bbd9fe364")
-		)
-		(pin "3"
-			(uuid "f812fd78-1cd0-4bdd-a698-1449a8fb6444")
-		)
-		(pin "2"
-			(uuid "f93ff2f8-79c5-47b9-acf1-c5ea6060bd68")
-		)
-		(pin "1"
-			(uuid "97546f8c-1f12-44ac-9902-842a0a3d96a0")
-		)
-		(instances
-			(project ""
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 123.19 105.41 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e95ef476-525f-4895-9d2d-49c503f19853")
-		(property "Reference" "U3"
-			(at 123.19 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP6002-xSN"
-			(at 123.19 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 123.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 123.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 123.19 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "4b1b5ce0-b99b-4302-b48c-09d0b8be7129")
-		)
-		(pin "7"
-			(uuid "1d580d2c-703c-47dc-af4d-f16108f63707")
-		)
-		(pin "4"
-			(uuid "082883f8-a2e5-43c0-a4bb-9b2edf284beb")
-		)
-		(pin "8"
-			(uuid "cd4912c7-4d73-4a72-a1ec-efde48aae86b")
-		)
-		(pin "5"
-			(uuid "51a6c3f2-7bf9-4023-ad90-16ea8cef0e0d")
-		)
-		(pin "3"
-			(uuid "278580d2-211d-4d07-b2ee-eaf3e87b930b")
-		)
-		(pin "2"
-			(uuid "b2d4a68e-bd60-46b7-898e-e77e3ce87e92")
-		)
-		(pin "1"
-			(uuid "0be0cdd8-e424-4687-883f-940954926708")
 		)
 	)
 	(symbol
@@ -2430,15 +2694,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "8258281b-7f63-451d-a225-df5a90cacee7")
+			(uuid "b716d4aa-62a7-47b8-a6ee-ca4f3fd23a92")
 		)
 		(pin "2"
-			(uuid "eca8ac53-1af0-4f26-bdb0-3f793a769ad9")
+			(uuid "0f972d99-cb17-4f05-a336-800934a8fef2")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
 					(reference "C8")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "C17")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "C11")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -2454,7 +2730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb3df146-eb55-491b-9692-fe95585751ab")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR029"
 			(at 54.61 80.01 0)
 			(effects
 				(font
@@ -2499,95 +2775,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "9b18cc1e-354f-4d48-9877-8ad721352572")
+			(uuid "bc348459-def9-4f2c-83d9-9e012ac01c3c")
 		)
 		(instances
-			(project ""
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
-					(reference "#PWR026")
+			(project "midi"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "#PWR041")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "#PWR029")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 217.17 73.66 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc140ca2-2adc-4caf-bfb9-bfcffd542934")
-		(property "Reference" "U3"
-			(at 215.9 72.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP6002-xSN"
-			(at 215.9 74.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 217.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 217.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 217.17 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "aa6499d6-8a08-498d-9ddb-8e7f6bbd3f80")
-		)
-		(pin "7"
-			(uuid "55d65346-033f-467b-b827-3c4e5fdeade2")
-		)
-		(pin "4"
-			(uuid "d6ca6d40-f8a7-48ae-9b3b-0cda7d3522f9")
-		)
-		(pin "8"
-			(uuid "806ddce0-154a-48c5-8a10-ad1e6ec45266")
-		)
-		(pin "5"
-			(uuid "5bd09dbe-3de6-4cb4-a14a-7c2bbd9fe364")
-		)
-		(pin "3"
-			(uuid "278580d2-211d-4d07-b2ee-eaf3e87b930b")
-		)
-		(pin "2"
-			(uuid "b2d4a68e-bd60-46b7-898e-e77e3ce87e92")
-		)
-		(pin "1"
-			(uuid "0be0cdd8-e424-4687-883f-940954926708")
 		)
 	)
 	(symbol
@@ -2600,7 +2804,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fcfb2505-dfd0-49b9-b45d-a2b0b71f1885")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR027"
 			(at 67.31 127 0)
 			(effects
 				(font
@@ -2645,12 +2849,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "23e501c9-9471-4409-bab1-2d1ff8f20a6e")
+			(uuid "cd83252a-bd43-4774-bada-fab7959df09d")
 		)
 		(instances
 			(project "midi"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/2b7b3019-4825-447d-b9f6-23b7a9a2d113"
-					(reference "#PWR024")
+					(reference "#PWR027")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/7f76fd55-c330-434a-b1a3-92be27022d54"
+					(reference "#PWR045")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/8dd2f067-d488-4193-9b2c-ad4022b05d1a"
+					(reference "#PWR033")
+					(unit 1)
+				)
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab/d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
