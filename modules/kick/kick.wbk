@@ -21,8 +21,8 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(55, 126, 184)",
-          "signal": "V(SHAPE_OUT)",
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(KICK_OUT)",
           "trace_type": 257
         }
       ]
