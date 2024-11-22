@@ -7110,7 +7110,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "OptoDevice:PerkinElmer_VTL5C"
+		(property "Footprint" "BreadModular_MISC:VTL5C"
 			(at 52.07 208.28 0)
 			(effects
 				(font
