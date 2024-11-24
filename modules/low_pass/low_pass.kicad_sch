@@ -2569,16 +2569,6 @@
 	)
 	(wire
 		(pts
-			(xy 341.63 83.82) (xy 354.33 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e762d30-cb1c-4e87-bd57-3c4eba270f4a")
-	)
-	(wire
-		(pts
 			(xy 69.85 93.98) (xy 69.85 86.36)
 		)
 		(stroke
@@ -2586,16 +2576,6 @@
 			(type default)
 		)
 		(uuid "1011bc74-49dc-46f3-9c55-037f2c327478")
-	)
-	(wire
-		(pts
-			(xy 354.33 76.2) (xy 350.52 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "126d06c2-4ffd-441e-9a22-b06733f2b073")
 	)
 	(wire
 		(pts
@@ -2609,6 +2589,16 @@
 	)
 	(wire
 		(pts
+			(xy 346.71 81.28) (xy 354.33 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16774d7d-61d3-45cb-b0c5-71129af3de44")
+	)
+	(wire
+		(pts
 			(xy 121.92 83.82) (xy 133.35 83.82)
 		)
 		(stroke
@@ -2616,26 +2606,6 @@
 			(type default)
 		)
 		(uuid "16abf699-b7b4-4994-b7eb-9ff4a66939ab")
-	)
-	(wire
-		(pts
-			(xy 341.63 81.28) (xy 354.33 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19628039-e3ef-47ce-8b15-c81786cea0bb")
-	)
-	(wire
-		(pts
-			(xy 330.2 91.44) (xy 334.01 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d078e03-eda5-4215-862a-ff211d9c5920")
 	)
 	(wire
 		(pts
@@ -2749,6 +2719,16 @@
 	)
 	(wire
 		(pts
+			(xy 344.17 83.82) (xy 354.33 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b39caab-f604-455f-bc6f-0a3cfb22d9e1")
+	)
+	(wire
+		(pts
 			(xy 60.96 95.25) (xy 60.96 100.33)
 		)
 		(stroke
@@ -2799,6 +2779,16 @@
 	)
 	(wire
 		(pts
+			(xy 344.17 81.28) (xy 344.17 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31b88ec2-0e33-4f89-be03-d72aa4e3ef35")
+	)
+	(wire
+		(pts
 			(xy 95.25 189.23) (xy 104.14 189.23)
 		)
 		(stroke
@@ -2846,16 +2836,6 @@
 			(type default)
 		)
 		(uuid "39c89a20-d0dd-4585-8376-17e3d7b2c4fa")
-	)
-	(wire
-		(pts
-			(xy 350.52 76.2) (xy 350.52 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b09bd3f-d12f-41c5-b9cd-821207b31195")
 	)
 	(wire
 		(pts
@@ -2916,6 +2896,16 @@
 			(type default)
 		)
 		(uuid "4c6a01ef-e4e2-4195-b742-afa8ea17a675")
+	)
+	(wire
+		(pts
+			(xy 341.63 81.28) (xy 344.17 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cbfdcde-7be1-4c8d-924e-dcda43837c55")
 	)
 	(wire
 		(pts
@@ -2996,6 +2986,16 @@
 			(type default)
 		)
 		(uuid "5b55311c-bf36-4ef9-9bcc-e2a84a4898a6")
+	)
+	(wire
+		(pts
+			(xy 349.25 62.23) (xy 354.33 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c3c2cb3-6efb-4658-9885-0970d1fabf97")
 	)
 	(wire
 		(pts
@@ -3219,6 +3219,16 @@
 	)
 	(wire
 		(pts
+			(xy 350.52 66.04) (xy 350.52 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "751e8065-34e8-47dd-8b72-84a8092bb709")
+	)
+	(wire
+		(pts
 			(xy 91.44 93.98) (xy 69.85 93.98)
 		)
 		(stroke
@@ -3256,16 +3266,6 @@
 			(type default)
 		)
 		(uuid "80fc5408-f817-48a6-9394-be595b8a0d77")
-	)
-	(wire
-		(pts
-			(xy 341.63 91.44) (xy 341.63 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8286a021-39cc-40a0-89be-3c46a6d01941")
 	)
 	(wire
 		(pts
@@ -3409,6 +3409,16 @@
 	)
 	(wire
 		(pts
+			(xy 354.33 78.74) (xy 350.52 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b11fb1b4-75bc-4229-92a2-631f0044fc4b")
+	)
+	(wire
+		(pts
 			(xy 156.21 172.72) (xy 104.14 172.72)
 		)
 		(stroke
@@ -3426,16 +3436,6 @@
 			(type default)
 		)
 		(uuid "bc641435-1c56-45b2-b6a1-71fb3bbf83ab")
-	)
-	(wire
-		(pts
-			(xy 346.71 78.74) (xy 354.33 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c18a7150-93e1-412f-af6f-0cea383b9aa7")
 	)
 	(wire
 		(pts
@@ -3466,6 +3466,16 @@
 			(type default)
 		)
 		(uuid "c47bf62f-3483-45b9-9024-e36e89c232e6")
+	)
+	(wire
+		(pts
+			(xy 354.33 62.23) (xy 354.33 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c678fbe4-9665-44c8-b8d4-24a765187afa")
 	)
 	(wire
 		(pts
@@ -3539,7 +3549,7 @@
 	)
 	(wire
 		(pts
-			(xy 346.71 69.85) (xy 346.71 78.74)
+			(xy 346.71 69.85) (xy 346.71 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3904,28 +3914,6 @@
 			)
 		)
 	)
-	(global_label "V_MID"
-		(shape output)
-		(at 330.2 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6ba9a9cc-2842-4985-a85c-73295f47b793")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 321.8324 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GATE_CV"
 		(shape input)
 		(at 334.01 217.17 90)
@@ -4058,6 +4046,28 @@
 			)
 		)
 	)
+	(global_label "AUDIO_IN"
+		(shape input)
+		(at 349.25 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "efc01c83-fa92-4c59-bc55-42016b180501")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 337.7375 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 118.11 198.12 0)
@@ -4085,7 +4095,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 119.0752 201.93 0)
 			(effects
 				(font
@@ -4153,7 +4163,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 360.68 119.888 90)
 			(effects
 				(font
@@ -4223,7 +4233,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 62.738 91.44 90)
 			(effects
 				(font
@@ -4456,7 +4466,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OptoDevice:PerkinElmer_VTL5C"
+		(property "Footprint" "BreadModular_MISC:VTL5C"
 			(at 109.22 96.52 0)
 			(effects
 				(font
@@ -4644,7 +4654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 172.4152 204.47 0)
 			(effects
 				(font
@@ -4687,74 +4697,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 337.82 91.44 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24f04ebc-d04f-491c-aa68-a9c80fdddf68")
-		(property "Reference" "R13"
-			(at 337.82 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 337.82 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 337.82 93.218 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 337.82 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 337.82 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "613ea905-e932-4f19-ba8b-097b67a85a21")
-		)
-		(pin "2"
-			(uuid "51ec14c2-96e0-4940-9c77-8230cec5320a")
-		)
-		(instances
-			(project "low_pass"
-				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 110.49 128.27 90)
 		(mirror x)
@@ -4780,7 +4722,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 110.49 128.27 0)
 			(effects
 				(font
@@ -4894,7 +4836,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 137.16 191.77 0)
 			(effects
 				(font
@@ -5016,7 +4958,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 132.08 149.352 90)
 			(effects
 				(font
@@ -5249,7 +5191,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 137.16 83.82 0)
 			(effects
 				(font
@@ -5343,7 +5285,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "3810be87-830d-4042-96e3-fb30bd946f38")
 		(property "Reference" "V4"
@@ -5667,7 +5609,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 375.92 156.21 0)
 			(effects
 				(font
@@ -5789,7 +5731,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 118.11 82.042 90)
 			(effects
 				(font
@@ -5857,7 +5799,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 78.74 83.82 0)
 			(effects
 				(font
@@ -6046,7 +5988,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 204.978 144.78 90)
 			(effects
 				(font
@@ -6244,7 +6186,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 121.92 149.352 90)
 			(effects
 				(font
@@ -6314,7 +6256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 358.902 207.01 90)
 			(effects
 				(font
@@ -6447,7 +6389,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 184.15 139.7 0)
 			(effects
 				(font
@@ -6832,7 +6774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OptoDevice:PerkinElmer_VTL5C"
+		(property "Footprint" "BreadModular_MISC:VTL5C"
 			(at 106.68 181.61 0)
 			(effects
 				(font
@@ -6943,7 +6885,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 342.9 157.48 0)
 			(effects
 				(font
@@ -7144,7 +7086,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 190.5 194.31 0)
 			(effects
 				(font
@@ -7268,7 +7210,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 105.918 160.02 90)
 			(effects
 				(font
@@ -7316,7 +7258,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "b72b91a0-83c0-4509-80a4-8314483715e7")
 		(property "Reference" "V2"
@@ -7509,7 +7451,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 348.9452 161.29 0)
 			(effects
 				(font
@@ -7579,7 +7521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 381.9652 160.02 0)
 			(effects
 				(font
@@ -7647,7 +7589,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 375.92 119.888 90)
 			(effects
 				(font
@@ -7923,7 +7865,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 337.82 83.058 90)
 			(effects
 				(font
@@ -8059,7 +8001,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OptoDevice:PerkinElmer_VTL5C"
+		(property "Footprint" "BreadModular_MISC:VTL5C"
 			(at 158.75 184.15 0)
 			(effects
 				(font
@@ -8169,7 +8111,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 111.76 149.352 90)
 			(effects
 				(font
@@ -8303,7 +8245,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 226.06 196.088 90)
 			(effects
 				(font
