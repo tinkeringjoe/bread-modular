@@ -20,6 +20,7 @@
 */
 
 #include <MIDI.h>
+#include <SoftwareSerial.h>
 
 // Create a MIDI object
 MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI);
@@ -36,6 +37,13 @@ MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI);
 #define GATE_PIN_06 15 // PA2
 #define GATE_PIN_07 16 // PA3
 #define GATE_PIN_08 0 // PA4
+
+// Define IMIDI Pins
+#define IMIDI_PIN_01 1 // PA5
+
+
+SoftwareSerial serialCh1 =  SoftwareSerial(-1, IMIDI_PIN_01);
+MIDI_CREATE_INSTANCE(SoftwareSerial, serialCh1, IMIDI_CH1);
 
 int getGatePin(int id) {
   switch (id) {
@@ -73,6 +81,8 @@ void handleNoteOn(byte channel, byte note, byte velocity) {
   if (gatePin != -1) {
     digitalWrite(gatePin, HIGH);
   }
+  
+  IMIDI_CH1.sendNoteOn(note, velocity, 1);
 }
 
 // Callback for Note Off messages
@@ -81,6 +91,8 @@ void handleNoteOff(byte channel, byte note, byte velocity) {
   if (gatePin != -1) {
     digitalWrite(gatePin, LOW);
   }
+
+  IMIDI_CH1.sendNoteOff(note, velocity, 1);
 }
 
 void setup() {
@@ -93,6 +105,10 @@ void setup() {
   MIDI.setHandleNoteOff(handleNoteOff);
 
   Serial.println("MIDI Listening Started!");
+
+  pinMode(IMIDI_PIN_01, OUTPUT);
+  serialCh1.begin(31250);
+  IMIDI_CH1.begin();
 }
 
 void loop() {
