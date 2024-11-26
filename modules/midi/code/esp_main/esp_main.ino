@@ -40,10 +40,22 @@ MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI);
 
 // Define IMIDI Pins
 #define IMIDI_PIN_01 1 // PA5
+#define IMIDI_PIN_02 2 // PA6
+#define IMIDI_PIN_03 3 // PA7
+#define IMIDI_PIN_04 4 // PB5
+#define IMIDI_PIN_05 5 // PB4
+#define IMIDI_PIN_06 8 // PB1
+#define IMIDI_PIN_07 9 // PB0
 
-
-SoftwareSerial serialCh1 =  SoftwareSerial(-1, IMIDI_PIN_01);
-MIDI_CREATE_INSTANCE(SoftwareSerial, serialCh1, IMIDI_CH1);
+SoftwareSerial midiSerialArray[] = {
+    SoftwareSerial(-1, IMIDI_PIN_01),
+    SoftwareSerial(-1, IMIDI_PIN_02),
+    SoftwareSerial(-1, IMIDI_PIN_03),
+    SoftwareSerial(-1, IMIDI_PIN_04),
+    SoftwareSerial(-1, IMIDI_PIN_05),
+    SoftwareSerial(-1, IMIDI_PIN_06),
+    SoftwareSerial(-1, IMIDI_PIN_07),
+};
 
 int getGatePin(int id) {
   switch (id) {
@@ -76,13 +88,27 @@ void setupGates() {
   }
 }
 
+void setupIMIDI() {
+  pinMode(IMIDI_PIN_01, OUTPUT);
+  pinMode(IMIDI_PIN_02, OUTPUT);
+  pinMode(IMIDI_PIN_03, OUTPUT);
+  pinMode(IMIDI_PIN_04, OUTPUT);
+  pinMode(IMIDI_PIN_05, OUTPUT);
+  pinMode(IMIDI_PIN_06, OUTPUT);
+  pinMode(IMIDI_PIN_07, OUTPUT);
+
+  for (int i = 0; i < 7; i++) {
+    midiSerialArray[i].begin(31250); // Start each SoftwareSerial at MIDI baud rate
+  }
+}
+
 void handleNoteOn(byte channel, byte note, byte velocity) {
   int gatePin = getGatePin(channel);
   if (gatePin != -1) {
     digitalWrite(gatePin, HIGH);
   }
   
-  IMIDI_CH1.sendNoteOn(note, velocity, 1);
+  sendMIDI(channel, 0x90, note, velocity);
 }
 
 // Callback for Note Off messages
@@ -92,7 +118,17 @@ void handleNoteOff(byte channel, byte note, byte velocity) {
     digitalWrite(gatePin, LOW);
   }
 
-  IMIDI_CH1.sendNoteOff(note, velocity, 1);
+  sendMIDI(channel, 0x80, note, velocity);
+}
+
+void sendMIDI(byte channel, byte status, byte data1, byte data2) {
+  int channelIndex = channel - 1;
+  if (channelIndex >= 0 && channelIndex < 7) {
+    SoftwareSerial serialCh = midiSerialArray[channelIndex];
+    serialCh.write(status); // Send the status byte
+    serialCh.write(data1);  // Send the first data byte
+    serialCh.write(data2);  // Send the second data byte
+  }
 }
 
 void setup() {
@@ -104,11 +140,9 @@ void setup() {
   MIDI.setHandleNoteOn(handleNoteOn);
   MIDI.setHandleNoteOff(handleNoteOff);
 
-  Serial.println("MIDI Listening Started!");
+  setupIMIDI();
 
-  pinMode(IMIDI_PIN_01, OUTPUT);
-  serialCh1.begin(31250);
-  IMIDI_CH1.begin();
+  Serial.println("MIDI Listening Started!");
 }
 
 void loop() {
