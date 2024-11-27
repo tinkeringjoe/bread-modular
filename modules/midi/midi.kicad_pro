@@ -58,10 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "clearance|53960000|85975000|a192b314-5ac8-4524-8764-848ef981f7ca|74ddac3e-074a-4254-ad97-fd287ca2c332",
-        "clearance|53960000|91650000|cbc5112f-ba67-4117-a5e8-0e7b067b3be0|9a723c2b-1a50-490f-a0ff-3737b4b9da99"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -119,7 +116,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.2,
+        "min_clearance": 0.15,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
@@ -131,7 +128,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.7,
         "solder_mask_to_copper_clearance": 0.0,
@@ -182,6 +179,7 @@
       ],
       "track_widths": [
         0.0,
+        0.15,
         0.3,
         0.5
       ],
@@ -622,24 +620,36 @@
       "Root"
     ],
     [
-      "49bb6b21-7f61-4812-af1a-818e74c87a72",
-      "esp32"
+      "66db4555-8c16-4d6d-9260-5d2859b60600",
+      "Gate Out"
     ],
     [
-      "2b7b3019-4825-447d-b9f6-23b7a9a2d113",
-      "gate_process"
+      "9dd790fe-c6de-443c-b7ea-1f21d3cc4192",
+      "Gate Out1"
     ],
     [
-      "8dd2f067-d488-4193-9b2c-ad4022b05d1a",
-      "gate_process1"
+      "42e2c36e-71cf-4750-b5ff-c2c29b3d8ca3",
+      "Gate Out2"
     ],
     [
-      "d4a443e0-bab7-43f2-83d9-2ad0cff1e6a6",
-      "gate_process2"
+      "6dc816a2-1fe9-4c12-95f6-7f07f275e7d8",
+      "Gate Out3"
     ],
     [
-      "7f76fd55-c330-434a-b1a3-92be27022d54",
-      "gate_process3"
+      "7e814ba6-5efd-4000-8561-162eceb07fcb",
+      "Gate Out4"
+    ],
+    [
+      "3fc63d2e-9127-42e9-bee6-a928d5fdb190",
+      "Gate Out5"
+    ],
+    [
+      "a3038840-a1fc-499d-8bb8-cac88379157e",
+      "Gate Out6"
+    ],
+    [
+      "6499a1be-2189-45ac-be3b-d9df9ce58f6e",
+      "Gate Out7"
     ]
   ],
   "text_variables": {}
