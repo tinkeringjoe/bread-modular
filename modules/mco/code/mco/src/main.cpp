@@ -6,6 +6,9 @@
 #include "utils.h"
 
 #define GATE_PIN PIN_PA7
+#define DETUNE_INPUT_PIN PIN_PB0
+
+float detunedSemitones = 0;
 
 // Create a MIDI object
 MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI);
@@ -14,7 +17,7 @@ void handleNoteOn(byte channel, byte note, byte velocity) {
   const int freq = midiToFrequency(note);
   setTone1Frequency(freq);
 
-  const int detunedFreq = midiToFrequency(note - 12);
+  const int detunedFreq = midiToFrequency(note - detunedSemitones);
   setTone2Frequency(detunedFreq);
 
   digitalWrite(GATE_PIN, HIGH);
@@ -45,9 +48,13 @@ void setup() {
 
   setTone1Frequency(20);
   setTone2Frequency(20);
+
+  // Set the analog reference for ADC with supply voltage.
+  analogReference(VDD);
 }
 
 void loop() {
   // parse incoming MIDI messages
   MIDI.read();
+  detunedSemitones = (analogRead(DETUNE_INPUT_PIN) / 1023.0) * 12;
 }
