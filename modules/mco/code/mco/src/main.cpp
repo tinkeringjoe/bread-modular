@@ -21,10 +21,16 @@ void handleNoteOn(byte channel, byte note, byte velocity) {
   setTone2Frequency(detunedFreq);
 
   digitalWrite(GATE_PIN, HIGH);
+
+  // Send the velocity out via PA6
+  DAC0.DATA = (velocity / 127.0) * 255;
 }
 
 void handleNoteOff(byte channel, byte note, byte velocity) {
   digitalWrite(GATE_PIN, LOW);
+
+  // Reset the velocity to 0.
+  DAC0.DATA = 0;
 }
 
 void setup() {
@@ -51,10 +57,18 @@ void setup() {
 
   // Set the analog reference for ADC with supply voltage.
   analogReference(VDD);
+ 
+  // DAC0 setup for sending velocity via the PA6 pin
+  VREF.CTRLA |= VREF_DAC0REFSEL_4V34_gc; //this will force it to use VDD as the VREF
+  VREF.CTRLB |= VREF_DAC0REFEN_bm;
+  DAC0.CTRLA = DAC_ENABLE_bm | DAC_OUTEN_bm;
+  DAC0.DATA = 0;
 }
 
 void loop() {
   // parse incoming MIDI messages
   MIDI.read();
+
+  // handle the input of the detune pot
   detunedSemitones = (analogRead(DETUNE_INPUT_PIN) / 1023.0) * 12;
 }
