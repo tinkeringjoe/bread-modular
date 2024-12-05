@@ -3817,6 +3817,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 46.99) (xy 76.2 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c92ea4bd-5d46-42aa-a889-375c3f8df9e5")
+	)
+	(wire
+		(pts
 			(xy 245.11 86.36) (xy 248.92 86.36)
 		)
 		(stroke
@@ -4611,7 +4621,7 @@
 	)
 	(global_label "UDPI"
 		(shape input)
-		(at 66.04 46.99 0)
+		(at 76.2 46.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4621,7 +4631,7 @@
 		)
 		(uuid "c4ec4f79-5166-4d92-bb61-a251f91747eb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.5005 46.99 0)
+			(at 83.6605 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4855,7 +4865,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 241.3 88.138 90)
 			(effects
 				(font
@@ -5155,7 +5165,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "OptoDevice:PerkinElmer_VTL5C"
+		(property "Footprint" "BreadModular_MISC:VTL5C"
 			(at 62.23 170.18 0)
 			(effects
 				(font
@@ -5341,7 +5351,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 142.748 168.91 90)
 			(effects
 				(font
@@ -5473,7 +5483,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 139.7 149.098 90)
 			(effects
 				(font
@@ -5607,7 +5617,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 72.39 66.548 90)
 			(effects
 				(font
@@ -5655,7 +5665,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "35ca87ac-c488-419e-ad34-a8697ca25f13")
 		(property "Reference" "V2"
@@ -5783,7 +5793,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 227.0252 113.03 0)
 			(effects
 				(font
@@ -5850,7 +5860,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 130.81 71.12 0)
 			(effects
 				(font
@@ -5965,7 +5975,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 218.44 110.49 0)
 			(effects
 				(font
@@ -6264,7 +6274,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "46f7813a-d509-4328-b560-e7c26048f484")
 		(property "Reference" "V4"
@@ -6454,7 +6464,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 52.07 182.118 90)
 			(effects
 				(font
@@ -6651,7 +6661,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 167.64 135.128 90)
 			(effects
 				(font
@@ -6718,7 +6728,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 133.35 179.578 90)
 			(effects
 				(font
@@ -6786,7 +6796,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 50.8 142.24 0)
 			(effects
 				(font
@@ -6964,7 +6974,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 76.2 147.828 90)
 			(effects
 				(font
@@ -7031,7 +7041,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 72.39 64.008 90)
 			(effects
 				(font
@@ -7098,7 +7108,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 55.118 107.95 90)
 			(effects
 				(font
@@ -7165,7 +7175,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 55.118 124.46 90)
 			(effects
 				(font
@@ -7364,7 +7374,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 86.36 147.828 90)
 			(effects
 				(font
@@ -7559,7 +7569,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 152.4 149.098 90)
 			(effects
 				(font
@@ -7773,7 +7783,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 41.91 33.3248 0)
 			(effects
 				(font
@@ -7970,7 +7980,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 110.49 189.738 90)
 			(effects
 				(font
@@ -8038,7 +8048,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 144.78 133.35 0)
 			(effects
 				(font
@@ -8102,28 +8112,28 @@
 			)
 		)
 		(pin "8"
-			(uuid "7c42371f-565d-4fce-b862-688ec69e81ba")
+			(uuid "7c42371f-565d-4fce-b862-688ec69e81bb")
 		)
 		(pin "2"
-			(uuid "0dc2583a-85f1-4cb6-b6de-c4a78cf7b099")
+			(uuid "0dc2583a-85f1-4cb6-b6de-c4a78cf7b09a")
 		)
 		(pin "1"
-			(uuid "89b69a2d-296b-460c-b8d3-ffc7148bd515")
+			(uuid "89b69a2d-296b-460c-b8d3-ffc7148bd516")
 		)
 		(pin "5"
-			(uuid "fcf30a64-ec66-4c02-8b48-d95ac203c1b7")
+			(uuid "fcf30a64-ec66-4c02-8b48-d95ac203c1b8")
 		)
 		(pin "7"
-			(uuid "58d6e88a-8da2-47ac-ab29-3395a343ea62")
+			(uuid "58d6e88a-8da2-47ac-ab29-3395a343ea63")
 		)
 		(pin "3"
-			(uuid "8e267880-112e-4a7e-bb7c-583d59859aae")
+			(uuid "8e267880-112e-4a7e-bb7c-583d59859aaf")
 		)
 		(pin "6"
-			(uuid "9e10d221-0218-4d35-8462-3f081241611e")
+			(uuid "9e10d221-0218-4d35-8462-3f081241611f")
 		)
 		(pin "4"
-			(uuid "9308f733-4b8f-44e8-820c-598ff7032342")
+			(uuid "9308f733-4b8f-44e8-820c-598ff7032343")
 		)
 		(instances
 			(project ""
@@ -8160,7 +8170,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 256.54 88.138 90)
 			(effects
 				(font
@@ -8281,6 +8291,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 69.85 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d42a71bd-5d22-44a6-93a7-9956e855f6dc")
+		(property "Reference" "R17"
+			(at 69.596 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 69.85 45.212 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 69.85 48.768 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 69.85 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60a4a554-8261-4716-94bd-0c65741a5814")
+		)
+		(pin "2"
+			(uuid "164f4420-ce61-41aa-b812-2d34fff1084b")
+		)
+		(instances
+			(project "mco"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:MCP6002-xSN")
 		(at 107.95 175.26 0)
 		(mirror y)
@@ -8306,7 +8383,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 107.95 175.26 0)
 			(effects
 				(font
@@ -8370,28 +8447,28 @@
 			)
 		)
 		(pin "8"
-			(uuid "7c42371f-565d-4fce-b862-688ec69e81ba")
+			(uuid "7c42371f-565d-4fce-b862-688ec69e81bc")
 		)
 		(pin "2"
-			(uuid "0dc2583a-85f1-4cb6-b6de-c4a78cf7b099")
+			(uuid "0dc2583a-85f1-4cb6-b6de-c4a78cf7b09b")
 		)
 		(pin "1"
-			(uuid "89b69a2d-296b-460c-b8d3-ffc7148bd515")
+			(uuid "89b69a2d-296b-460c-b8d3-ffc7148bd517")
 		)
 		(pin "5"
-			(uuid "fcf30a64-ec66-4c02-8b48-d95ac203c1b7")
+			(uuid "fcf30a64-ec66-4c02-8b48-d95ac203c1b9")
 		)
 		(pin "7"
-			(uuid "58d6e88a-8da2-47ac-ab29-3395a343ea62")
+			(uuid "58d6e88a-8da2-47ac-ab29-3395a343ea64")
 		)
 		(pin "3"
-			(uuid "8e267880-112e-4a7e-bb7c-583d59859aae")
+			(uuid "8e267880-112e-4a7e-bb7c-583d59859ab0")
 		)
 		(pin "6"
-			(uuid "9e10d221-0218-4d35-8462-3f081241611e")
+			(uuid "9e10d221-0218-4d35-8462-3f0812416120")
 		)
 		(pin "4"
-			(uuid "9308f733-4b8f-44e8-820c-598ff7032342")
+			(uuid "9308f733-4b8f-44e8-820c-598ff7032344")
 		)
 		(instances
 			(project ""
@@ -8427,7 +8504,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 85.09 180.34 0)
 			(effects
 				(font
@@ -8521,7 +8598,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "ecbeec83-1851-4f99-bd9b-71363b028ea1")
 		(property "Reference" "V3"
@@ -8646,7 +8723,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 102.87 116.078 90)
 			(effects
 				(font
