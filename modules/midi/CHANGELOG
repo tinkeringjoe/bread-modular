@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1
+No changes in the code or schematics. But simply porting the
+Arduino codebase to Platform.io
+
 ## 0.2.0
 Implemented Modular MIDI and Gate Support.
 Now we use ATTiny 1616 as the MCU
