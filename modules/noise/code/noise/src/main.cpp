@@ -2,6 +2,8 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+#define NOISE_TONE_PIN PIN_PA7
+
 // LFSR States (initialize with different seeds)
 uint16_t lfsr1 = 0xACE1; // LFSR 1
 uint16_t lfsr2 = 0xBEEF; // LFSR 2
@@ -26,6 +28,9 @@ uint8_t generateWhiteNoise() {
 }
 
 void setup() {
+  // Set the analog reference for ADC with supply voltage.
+  analogReference(VDD);
+
   // DAC0 setup for sending velocity via the PA6 pin
   VREF.CTRLA |= VREF_DAC0REFSEL_4V34_gc; //this will force it to use VDD as the VREF
   VREF.CTRLB |= VREF_DAC0REFEN_bm;
@@ -40,5 +45,21 @@ void outputToDAC(uint8_t value) {
 void loop() {
   uint8_t metallicNoise = generateWhiteNoise(); // Generate noise
   outputToDAC(metallicNoise); // Output noise to DAC
-  _delay_us(50); // Adjust sampling rate (~20kHz)
+
+  // Read the potentiometer value (0-1023)
+  double normalizedToneValue = analogRead(NOISE_TONE_PIN) / 1023.0;
+
+  // Implement the noise value as liner for the first half
+  // and exponential for the next half
+  double timeToDelay;
+  if (normalizedToneValue < 0.5) {
+    timeToDelay = normalizedToneValue * 500;
+  } else {
+    timeToDelay = 500 * 0.5 + pow(2, normalizedToneValue * 15);
+  }
+
+  // Implement variable delay using a loop
+  for (long i = 0; i < (long)timeToDelay; i++) {
+      _delay_us(1);
+  }
 }
