@@ -55,7 +55,7 @@ void loop() {
   if (normalizedToneValue < 0.5) {
     timeToDelay = normalizedToneValue * 500;
   } else {
-    timeToDelay = 500 * 0.5 + pow(2, normalizedToneValue * 15);
+    timeToDelay = 500 * 0.5 + pow(2, normalizedToneValue * 18);
   }
 
   // Implement variable delay using a loop
