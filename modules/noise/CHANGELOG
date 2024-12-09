@@ -1,4 +1,8 @@
 # Changelog
 
+## 0.1.1
+Increase the overall noise module's delay range.
+This will help us to make some random values with a LFO like range.
+
 ## 0.1.0
 Initial Release
