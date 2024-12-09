@@ -2145,7 +2145,7 @@
 		(uuid "082415d8-7b73-456a-83e2-3d7e36fb1d48")
 	)
 	(junction
-		(at 260.35 123.19)
+		(at 260.35 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10880cfc-0a9c-4e8b-8716-218fc4e98289")
@@ -2175,7 +2175,7 @@
 		(uuid "40ddf7a8-0963-4469-9fd3-111c40e102eb")
 	)
 	(junction
-		(at 260.35 102.87)
+		(at 260.35 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47c228c4-acfa-4e78-ab50-4aaee9cfe2d1")
@@ -2258,7 +2258,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 123.19) (xy 260.35 124.46)
+			(xy 260.35 124.46) (xy 260.35 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2268,7 +2268,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 109.22) (xy 266.7 102.87)
+			(xy 266.7 110.49) (xy 266.7 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2368,7 +2368,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 120.65) (xy 260.35 123.19)
+			(xy 260.35 121.92) (xy 260.35 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2378,7 +2378,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 102.87) (xy 260.35 102.87)
+			(xy 266.7 104.14) (xy 260.35 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2418,7 +2418,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 100.33) (xy 260.35 102.87)
+			(xy 260.35 101.6) (xy 260.35 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2578,7 +2578,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 123.19) (xy 260.35 123.19)
+			(xy 266.7 124.46) (xy 260.35 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2738,7 +2738,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 102.87) (xy 260.35 105.41)
+			(xy 260.35 104.14) (xy 260.35 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3058,7 +3058,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 116.84) (xy 266.7 123.19)
+			(xy 266.7 118.11) (xy 266.7 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3720,7 +3720,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 241.3 88.138 90)
 			(effects
 				(font
@@ -3787,7 +3787,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 97.79 133.858 90)
 			(effects
 				(font
@@ -3848,7 +3848,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5"
+		(property "Value" "3.3"
 			(at 237.49 149.7301 0)
 			(effects
 				(font
@@ -3953,7 +3953,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 88.9 125.73 0)
 			(effects
 				(font
@@ -4174,7 +4174,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 83.82 48.768 90)
 			(effects
 				(font
@@ -4242,7 +4242,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 124.46 110.49 0)
 			(effects
 				(font
@@ -4395,7 +4395,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 148.59 163.068 90)
 			(effects
 				(font
@@ -4463,7 +4463,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 53.34 107.95 0)
 			(effects
 				(font
@@ -4744,7 +4744,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 80.01 106.9848 0)
 			(effects
 				(font
@@ -4879,7 +4879,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 237.7948 110.49 0)
 			(effects
 				(font
@@ -4947,7 +4947,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 83.82 29.718 90)
 			(effects
 				(font
@@ -5056,7 +5056,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 262.89 113.03 0)
+		(at 262.89 114.3 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5064,7 +5064,7 @@
 		(dnp no)
 		(uuid "600f51b9-0fd3-4be5-88eb-65a31668d0d9")
 		(property "Reference" "U3"
-			(at 253.492 119.888 90)
+			(at 253.492 121.158 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5073,7 +5073,7 @@
 			)
 		)
 		(property "Value" "MCP6002-xSN"
-			(at 256.032 119.888 90)
+			(at 256.032 121.158 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5081,8 +5081,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 262.89 113.03 0)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 262.89 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5091,7 +5091,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 262.89 113.03 0)
+			(at 262.89 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5100,7 +5100,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 262.89 113.03 0)
+			(at 262.89 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5166,7 +5166,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 85.09 66.04 0)
 			(effects
 				(font
@@ -5221,7 +5221,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 260.35 124.46 0)
+		(at 260.35 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5229,7 +5229,7 @@
 		(dnp no)
 		(uuid "633c232c-f4cd-4ee1-9e82-287023e7ae0d")
 		(property "Reference" "#PWR012"
-			(at 260.35 130.81 0)
+			(at 260.35 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5238,7 +5238,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.35 129.54 0)
+			(at 260.35 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5246,7 +5246,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 124.46 0)
+			(at 260.35 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5255,7 +5255,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 124.46 0)
+			(at 260.35 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5264,7 +5264,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 260.35 124.46 0)
+			(at 260.35 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5310,7 +5310,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 129.54 161.29 0)
 			(effects
 				(font
@@ -5437,7 +5437,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 260.35 100.33 0)
+		(at 260.35 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5446,7 +5446,7 @@
 		(fields_autoplaced yes)
 		(uuid "71e068dc-2ae6-4c61-93d3-224998f1c72d")
 		(property "Reference" "#PWR010"
-			(at 260.35 104.14 0)
+			(at 260.35 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5455,7 +5455,7 @@
 			)
 		)
 		(property "Value" "V_SUPPLY"
-			(at 262.89 99.0599 0)
+			(at 262.89 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5464,7 +5464,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 100.33 0)
+			(at 260.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5473,7 +5473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 100.33 0)
+			(at 260.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5482,7 +5482,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 260.35 100.33 0)
+			(at 260.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5594,7 +5594,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 234.95 114.3 0)
 			(effects
 				(font
@@ -5761,7 +5761,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 93.0148 176.53 0)
 			(effects
 				(font
@@ -5829,7 +5829,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 143.51 112.268 90)
 			(effects
 				(font
@@ -5897,7 +5897,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 52.07 161.29 0)
 			(effects
 				(font
@@ -5959,7 +5959,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 266.7 113.03 180)
+		(at 266.7 114.3 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5968,7 +5968,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac96dd7a-1004-45d3-84c2-de49eabfb585")
 		(property "Reference" "C3"
-			(at 270.51 111.7599 0)
+			(at 270.51 113.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5977,7 +5977,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 270.51 114.2999 0)
+			(at 270.51 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5985,8 +5985,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 265.7348 109.22 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 265.7348 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5995,7 +5995,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 266.7 113.03 0)
+			(at 266.7 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6004,7 +6004,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 266.7 113.03 0)
+			(at 266.7 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6053,7 +6053,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
 			(at 74.93 161.29 0)
 			(effects
 				(font
@@ -6331,7 +6331,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 256.54 88.138 90)
 			(effects
 				(font
@@ -6542,7 +6542,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 45.72 26.9748 0)
 			(effects
 				(font
@@ -6609,7 +6609,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 85.09 169.418 90)
 			(effects
 				(font
@@ -6823,7 +6823,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 93.0148 168.91 0)
 			(effects
 				(font
