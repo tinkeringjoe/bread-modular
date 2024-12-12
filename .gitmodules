@@ -1,6 +1,6 @@
 [submodule "opt/KiCadLibraries"]
 	path = opt/KiCadLibraries
-	url = https://github.com/benjiaomodular/KiCadLibraries.git
+	url = https://github.com/arunoda/KiCadLibraries.git
 [submodule "opt/AudioJacks"]
 	path = opt/AudioJacks
 	url = https://github.com/clacktronics/AudioJacks.git
