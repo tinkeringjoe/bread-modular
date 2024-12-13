@@ -18,7 +18,7 @@ void setup() {
 void mode_add() {
   float cv1 = analogRead(PIN_CV1) / 1023.0;
   float cv2 = analogRead(PIN_CV2) / 1023.0;
-  DAC0.DATA = min(1.0, (cv1 + cv2)) * 255;
+  DAC0.DATA = constrain((cv1 + cv2), 0.0, 1.0) * 255;
 }
 
 void loop() {
