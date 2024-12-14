@@ -7,14 +7,20 @@
 
 #define LED_MODE_0 PIN_PB5
 #define LED_MODE_1 PIN_PC0
+#define LED_MODE_2 PIN_PC1
+#define LED_MODE_3 PIN_PC2
+#define LED_MODE_4 PIN_PC3
 
-const byte totalModes = 2;
+const byte totalModes = 5;
 volatile byte mode = 0;
 volatile unsigned long toggleTime = 0;
 
 void enableLED(byte pin) {
   digitalWrite(LED_MODE_0, LOW);
   digitalWrite(LED_MODE_1, LOW);
+  digitalWrite(LED_MODE_2, LOW);
+  digitalWrite(LED_MODE_3, LOW);
+  digitalWrite(LED_MODE_4, LOW);
 
   digitalWrite(pin, HIGH);
 }
@@ -78,6 +84,9 @@ void setup() {
   pinMode(PIN_TOGGLE, INPUT_PULLUP);
   pinMode(LED_MODE_0, OUTPUT);
   pinMode(LED_MODE_1, OUTPUT);
+  pinMode(LED_MODE_2, OUTPUT);
+  pinMode(LED_MODE_3, OUTPUT);
+  pinMode(LED_MODE_4, OUTPUT);
   mode = EEPROM.read(0);
 
   Serial.begin(9600);
@@ -86,7 +95,7 @@ void setup() {
 
 void loop() {
   handleTogglePinChange();
-  
+
   switch (mode)
   {
     case 0:
@@ -97,6 +106,18 @@ void loop() {
     case 1:
       enableLED(LED_MODE_1);
       mode_subtract();
+      break;
+    
+    case 2:
+      enableLED(LED_MODE_2);
+      break;
+
+    case 3:
+      enableLED(LED_MODE_3);
+      break;
+
+    case 4:
+      enableLED(LED_MODE_4);
       break;
     
     default:
