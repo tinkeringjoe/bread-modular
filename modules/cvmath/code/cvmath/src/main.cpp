@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <EEPROM.h>
 
 #define PIN_CV1 PIN_PA7
 #define PIN_CV2 PIN_PB0
@@ -10,7 +11,13 @@
 const byte totalModes = 2;
 volatile byte mode = 0;
 volatile unsigned long toggleTime = 0;
-volatile bool toggleMode = false;
+
+void enableLED(byte pin) {
+  digitalWrite(LED_MODE_0, LOW);
+  digitalWrite(LED_MODE_1, LOW);
+
+  digitalWrite(pin, HIGH);
+}
 
 void handleTogglePinChange() {
   const int toggleValue = digitalRead(PIN_TOGGLE);
@@ -40,6 +47,7 @@ void handleTogglePinChange() {
   if (mode >= totalModes) {
     mode = 0;
   }
+  EEPROM.write(0, mode);
   Serial.printf("Mode changed to: %d\n", mode);
   toggleTime = 0;
 } 
@@ -56,13 +64,6 @@ void mode_subtract() {
   DAC0.DATA = constrain((cv1 - cv2), 0.0, 1.0) * 255;
 }
 
-void enableLED(byte pin) {
-  digitalWrite(LED_MODE_0, LOW);
-  digitalWrite(LED_MODE_1, LOW);
-
-  digitalWrite(pin, HIGH);
-}
-
 void setup() {
   // DAC0 setup via the PA6 pin
   VREF.CTRLA |= VREF_DAC0REFSEL_4V34_gc; //this will force it to use VDD as the VREF
@@ -75,28 +76,25 @@ void setup() {
   pinMode(PIN_CV2, INPUT);
 
   pinMode(PIN_TOGGLE, INPUT_PULLUP);
-  // attachInterrupt(digitalPinToInterrupt(PIN_TOGGLE), handleTogglePinChange, CHANGE);
   pinMode(LED_MODE_0, OUTPUT);
   pinMode(LED_MODE_1, OUTPUT);
+  mode = EEPROM.read(0);
 
   Serial.begin(9600);
   Serial.println("CV_MATH Started!");
 }
 
 void loop() {
-  // mode_add();
-
   handleTogglePinChange();
+  
   switch (mode)
   {
     case 0:
-      /* code */
       enableLED(LED_MODE_0);
       mode_add();
       break;
 
     case 1:
-      /* code */
       enableLED(LED_MODE_1);
       mode_subtract();
       break;
