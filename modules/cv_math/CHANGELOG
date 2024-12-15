@@ -1,4 +1,9 @@
 # Changelog
 
+## 0.1.1
+Implement a basic xpand algorithm.
+It will scale the waveform for source position of CV1 to the maximum
+based on the CV2 input.
+
 ## 0.1.0
 Initial Release
