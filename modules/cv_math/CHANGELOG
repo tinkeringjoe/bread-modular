@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+Improve the xpand algorithm.
+Now it will streach the waveform to the top.
+The bottom most part of the waveform stays the same.
+
 ## 0.1.1
 Implement a basic xpand algorithm.
 It will scale the waveform for source position of CV1 to the maximum
