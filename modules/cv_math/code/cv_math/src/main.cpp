@@ -102,13 +102,20 @@ void mode_xpand() {
     sampleLowestValue = 1023;
   }
 
-  //TODO: Implement a center point based scaling method rather than from the zero
   float normalizedCV1 = cv1 / 1023.0;
   float maxScale = 1023.0 / outputHighestValue;
+
+  // We use this distance as a scale factor.
+  // So the bottom of the waveform will stay as there
+  // only the top values scales according to the distance
+  int fullAmplitude = outputHighestValue - outputLowestValue;
+  int distance = cv1 - outputLowestValue;
+  float distanceNormalized = distance / (float)fullAmplitude;
+  
   float xpandCV1 = normalizedCV1 * maxScale;
   float diff = xpandCV1 - normalizedCV1;
 
-  DAC0.DATA = (normalizedCV1 + diff * normalizedCv2) * 255;
+  DAC0.DATA = (normalizedCV1 + diff * normalizedCv2 * distanceNormalized) * 255;
 }
 
 void setup() {
