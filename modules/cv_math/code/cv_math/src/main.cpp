@@ -70,6 +70,47 @@ void mode_subtract() {
   DAC0.DATA = constrain((cv1 - cv2), 0.0, 1.0) * 255;
 }
 
+// Variables to track waveform stats
+uint16_t sampleHighestValue = 0;        // Highest amplitude detected
+uint16_t sampleLowestValue = 1023;      // Lowest amplitude detected
+float outputLowestValue = 1023; // Smoothed lowest value (weighted average)
+float outputHighestValue = 0;   // Smoothed highest value (weighted average)
+float alpha = 0.9;
+unsigned long lastCheckedAt = 0;
+
+void mode_xpand() {
+  int cv1 = analogRead(PIN_CV1);
+  float normalizedCv2 = analogRead(PIN_CV2) / 1023.0;
+
+  // Update the highest value
+  if (cv1 > sampleHighestValue) {
+    sampleHighestValue = cv1;
+  }
+
+  // Update the lowest value
+  if (cv1 < sampleLowestValue) {
+    sampleLowestValue = cv1;
+  }
+
+  if ((millis() - lastCheckedAt) > 1000) {
+    outputLowestValue = alpha * sampleLowestValue + (1 - alpha) * outputLowestValue;
+    outputHighestValue = alpha * sampleHighestValue + (1 - alpha) * outputHighestValue;
+
+    // Reset values after the sample processed
+    lastCheckedAt = millis();
+    sampleHighestValue = 0;
+    sampleLowestValue = 1023;
+  }
+
+  //TODO: Implement a center point based scaling method rather than from the zero
+  float normalizedCV1 = cv1 / 1023.0;
+  float maxScale = 1023.0 / outputHighestValue;
+  float xpandCV1 = normalizedCV1 * maxScale;
+  float diff = xpandCV1 - normalizedCV1;
+
+  DAC0.DATA = (normalizedCV1 + diff * normalizedCv2) * 255;
+}
+
 void setup() {
   // DAC0 setup via the PA6 pin
   VREF.CTRLA |= VREF_DAC0REFSEL_4V34_gc; //this will force it to use VDD as the VREF
@@ -110,6 +151,7 @@ void loop() {
     
     case 2:
       enableLED(LED_MODE_2);
+      mode_xpand();
       break;
 
     case 3:
