@@ -4,7 +4,7 @@
     {
       "analysis": "TRAN",
       "commands": [
-        ".tran 100u 50m",
+        ".tran 1m 100m 0 1m",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -23,6 +23,11 @@
         {
           "color": "rgb(77, 175, 74)",
           "signal": "V(HIHAT_OUT)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(PULSE_OUT)",
           "trace_type": 257
         },
         {
