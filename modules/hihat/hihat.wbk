@@ -21,18 +21,8 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(77, 175, 74)",
-          "signal": "V(HIHAT_OUT)",
-          "trace_type": 257
-        },
-        {
           "color": "rgb(228, 26, 28)",
           "signal": "V(PULSE_OUT)",
-          "trace_type": 257
-        },
-        {
-          "color": "rgb(152, 78, 163)",
-          "signal": "V(TRANSIENT_CV)",
           "trace_type": 257
         }
       ]
