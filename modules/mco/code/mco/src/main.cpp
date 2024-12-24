@@ -1,26 +1,23 @@
 #include <Arduino.h>
+#include <SoftwareSerial.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <MIDI.h>
-#include "tones.h"
 #include "utils.h"
 
 #define GATE_PIN PIN_PA7
-#define DETUNE_INPUT_PIN PIN_PB0
+#define LOGGER_PIN_TX PIN_PB4
 
-float detunedSemitones = 0;
+SoftwareSerial logger = SoftwareSerial(-1, LOGGER_PIN_TX);
 
 // Create a MIDI object
 MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI);
 
 void handleNoteOn(byte channel, byte note, byte velocity) {
   const int freq = midiToFrequency(note);
-  setTone1Frequency(freq);
-
-  const int detunedFreq = midiToFrequency(note - detunedSemitones);
-  setTone2Frequency(detunedFreq);
-
   digitalWrite(GATE_PIN, HIGH);
+
+  logger.printf("NOTE ON: %d\n", note);
 
   // Send the velocity out via PA6
   DAC0.DATA = (velocity / 127.0) * 255;
@@ -28,6 +25,8 @@ void handleNoteOn(byte channel, byte note, byte velocity) {
 
 void handleNoteOff(byte channel, byte note, byte velocity) {
   digitalWrite(GATE_PIN, LOW);
+
+  logger.printf("NOTE OFF: %d\n", note);
 
   // Reset the velocity to 0.
   DAC0.DATA = 0;
@@ -38,22 +37,20 @@ void setup() {
   pinMode(GATE_PIN, OUTPUT);
   digitalWrite(GATE_PIN, LOW);
 
-  // Setup tones
-  setupTone1();
-  setupTone2();
-
   // Setup Serial Comm
   Serial.begin(31250);
+
+  // Setup Logger
+  pinMode(LOGGER_PIN_TX, OUTPUT);
+  logger.begin(9600);
   
   // Initialize the MIDI library
   // Listen to only the channel 1
   MIDI.begin(1);
   MIDI.setHandleNoteOn(handleNoteOn);
   MIDI.setHandleNoteOff(handleNoteOff);
-  Serial.println("MCO Started!");
+  logger.println("MCO 0.2.0 Started!");
 
-  setTone1Frequency(20);
-  setTone2Frequency(20);
 
   // Set the analog reference for ADC with supply voltage.
   analogReference(VDD);
@@ -68,7 +65,4 @@ void setup() {
 void loop() {
   // parse incoming MIDI messages
   MIDI.read();
-
-  // handle the input of the detune pot
-  detunedSemitones = (analogRead(DETUNE_INPUT_PIN) / 1023.0) * 12;
 }
