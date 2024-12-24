@@ -2328,12 +2328,6 @@
 		(uuid "082415d8-7b73-456a-83e2-3d7e36fb1d48")
 	)
 	(junction
-		(at 153.67 226.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "10ebcd9d-3798-4946-8424-335e3cbe9358")
-	)
-	(junction
 		(at 381 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2490,6 +2484,12 @@
 		(uuid "c8730431-d3a4-4ade-a81b-3285008bb399")
 	)
 	(junction
+		(at 153.67 226.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d03ce3d5-5ad2-46b0-927f-4db1fbb32ccd")
+	)
+	(junction
 		(at 41.91 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2644,6 +2644,16 @@
 			(type default)
 		)
 		(uuid "211cf28d-d364-4f04-a10d-13ac2d407f8d")
+	)
+	(wire
+		(pts
+			(xy 153.67 246.38) (xy 153.67 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2299a81f-33fd-4494-980c-71a9a66531d0")
 	)
 	(wire
 		(pts
@@ -2987,6 +2997,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 242.57) (xy 153.67 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ded8946-9af2-4be8-ab87-c628192593c6")
+	)
+	(wire
+		(pts
 			(xy 191.77 64.77) (xy 194.31 64.77)
 		)
 		(stroke
@@ -2994,6 +3014,16 @@
 			(type default)
 		)
 		(uuid "6126ee7a-6b7b-4335-8233-2bf48905aeec")
+	)
+	(wire
+		(pts
+			(xy 153.67 242.57) (xy 153.67 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64236686-599b-4b8a-a78b-d5c649599d42")
 	)
 	(wire
 		(pts
@@ -3104,16 +3134,6 @@
 			(type default)
 		)
 		(uuid "6b145404-82fb-421c-a0db-bb9b3fca55e0")
-	)
-	(wire
-		(pts
-			(xy 153.67 226.06) (xy 153.67 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c3cb824-0841-40d9-8489-407831ceeca6")
 	)
 	(wire
 		(pts
@@ -3347,6 +3367,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 246.38) (xy 153.67 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e9aba6c-62c6-400b-8a06-3ca2ea8d3496")
+	)
+	(wire
+		(pts
 			(xy 127 62.23) (xy 127 58.42)
 		)
 		(stroke
@@ -3364,6 +3394,16 @@
 			(type default)
 		)
 		(uuid "8f300c4c-af61-4ff1-a2bd-60e43b6f06d1")
+	)
+	(wire
+		(pts
+			(xy 109.22 113.03) (xy 154.94 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f31ddd6-1489-43bf-8249-258937a1fc3f")
 	)
 	(wire
 		(pts
@@ -3504,16 +3544,6 @@
 			(type default)
 		)
 		(uuid "a8025901-b126-4890-a054-aff67c9a447f")
-	)
-	(wire
-		(pts
-			(xy 109.22 113.03) (xy 154.94 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a967979d-fad8-4696-b233-3528b7c7b5f7")
 	)
 	(wire
 		(pts
@@ -4949,6 +4979,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 165.1 242.57 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ac3c308-5ba9-4bde-a52d-65a4d77c7edc")
+		(property "Reference" "RV3"
+			(at 165.1 236.728 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "50k"
+			(at 165.1 234.188 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BreadModular_Pots:Potentiometer_RV09"
+			(at 165.1 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 165.1 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 165.1 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 165.1 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 165.1 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "pos=0.1"
+			(at 165.1 231.648 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Comments" "RANGE"
+			(at 165.1 239.268 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "71619efa-80af-40d0-b92b-f702f8c3d36f")
+		)
+		(pin "1"
+			(uuid "b398adf4-a8ee-4811-8a1c-41eaee190221")
+		)
+		(pin "2"
+			(uuid "f94aab66-fb7c-4866-bb4e-eb729a22cfc2")
+		)
+		(instances
+			(project "svf"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "RV3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:VDC")
 		(at 334.01 187.96 0)
 		(unit 1)
@@ -5573,7 +5717,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "51k"
 			(at 45.72 51.054 90)
 			(effects
 				(font
@@ -6532,7 +6676,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "5.1k"
 			(at 159.004 257.048 90)
 			(effects
 				(font
@@ -6598,7 +6742,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "51k"
 			(at 73.66 129.794 90)
 			(effects
 				(font
@@ -8427,7 +8571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "pos=0.2"
+		(property "Sim.Params" "pos=0.5"
 			(at 109.22 127.762 90)
 			(effects
 				(font
@@ -8907,7 +9051,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "51k"
 			(at 93.98 122.174 90)
 			(effects
 				(font
