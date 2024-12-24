@@ -32,6 +32,37 @@ void handleNoteOff(byte channel, byte note, byte velocity) {
   DAC0.DATA = 0;
 }
 
+void setupTone1() {
+    TCB0.CTRLA |= TCB_ENABLE_bm; // counting value
+
+    // Uses 20Mhz clock & divide it by for here
+    // So, 1 tick is 0.1us
+    TCB0.CTRLA |= TCB_CLKSEL_CLKDIV2_gc; // clock div by 2
+
+    // The intruppt is runnign at every 100us
+    TCB0.CCMP = 1000; // Set the compare value
+  
+    // Enabling inturrupts
+    TCB0.CTRLB |= TCB_CNTMODE_INT_gc; // Timer interrupt mode (periodic interrupts)
+    TCB0.INTCTRL = TCB_CAPT_bm; // Enable Capture interrupt
+    sei();
+}
+
+// TCB0 Interrupt Service Routine
+int val = 0;
+ISR(TCB0_INT_vect) {
+  if (val == 0) {
+    val = 1;
+    DAC0.DATA = 0;
+  } else {
+    val = 0;
+    DAC0.DATA = 255;
+  }
+
+  // Clear the interrupt flag
+  TCB0.INTFLAGS = TCB_CAPT_bm;
+}
+
 void setup() {
   // define the gate pin
   pinMode(GATE_PIN, OUTPUT);
@@ -60,6 +91,8 @@ void setup() {
   VREF.CTRLB |= VREF_DAC0REFEN_bm;
   DAC0.CTRLA = DAC_ENABLE_bm | DAC_OUTEN_bm;
   DAC0.DATA = 0;
+
+  setupTone1();
 }
 
 void loop() {
