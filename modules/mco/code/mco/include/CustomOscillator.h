@@ -11,7 +11,7 @@ public:
     // Set the desired frequency
     void setFrequency(float frequency) {
         // Calculate the phase increment based on frequency, table size, and sample rate
-        phaseIncrement = (frequency * tableSize) / sampleRate;
+        phaseIncrement = (uint32_t)((frequency * tableSize) / sampleRate);
     }
 
     // Generate the next sample
@@ -25,7 +25,7 @@ public:
         return wavetable[index];
     }
 
-private:
+public:
     const int8_t* wavetable;  // Pointer to the wavetable
     uint16_t tableSize;        // Size of the wavetable
     uint32_t sampleRate;       // Sample rate in Hz
