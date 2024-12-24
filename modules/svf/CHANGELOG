@@ -1,4 +1,11 @@
 # Changelog
 
+## 0.2.0
+Make it louder & add curve control.
+
+* Now the SVF is 8db louder in general.
+* Now the resonance control active troughout the potentiometer
+* Add the curve support for the freq so, we can target low or high based on the usage.
+
 ## 0.1.0
 Initial Release
