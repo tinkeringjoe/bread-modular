@@ -9,6 +9,8 @@
 
 #define GATE_PIN PIN_PA7
 #define LOGGER_PIN_TX PIN_PB4
+#define PIN_CV1 PIN_PA1
+#define PIN_CV2 PIN_PA2
 
 SimpleMIDI MIDI;
 SoftwareSerial logger = SoftwareSerial(-1, LOGGER_PIN_TX);
@@ -16,6 +18,12 @@ SoftwareSerial logger = SoftwareSerial(-1, LOGGER_PIN_TX);
 CustomOscillator osc1(TRIANGLE2048_DATA, 2048, 10000);
 CustomOscillator osc2(TRIANGLE2048_DATA, 2048, 10000);
 CustomOscillator osc3(TRIANGLE2048_DATA, 2048, 10000);
+CustomOscillator osc4(TRIANGLE2048_DATA, 2048, 10000);
+CustomOscillator osc5(TRIANGLE2048_DATA, 2048, 10000);
+CustomOscillator osc6(TRIANGLE2048_DATA, 2048, 10000);
+CustomOscillator osc7(TRIANGLE2048_DATA, 2048, 10000);
+
+uint8_t unisonCount = 1;
 
 void setupTimer() {
     TCB0.CTRLA |= TCB_ENABLE_bm; // counting value
@@ -53,6 +61,8 @@ void setup() {
   
   // Set the analog reference for ADC with supply voltage.
   analogReference(VDD);
+  pinMode(PIN_CV1, INPUT);
+  pinMode(PIN_CV2, INPUT);
  
   // DAC0 setup for sending velocity via the PA6 pin
   VREF.CTRLA |= VREF_DAC0REFSEL_4V34_gc; //this will force it to use VDD as the VREF
@@ -69,6 +79,60 @@ void setup() {
   logger.println("MCO 0.2.0 Started!");
 }
 
+void updateNote(byte note) {
+  float cv1 = analogRead(PIN_CV1) / 1023.0;
+  float range = cv1 * 12;
+  osc1.setFrequency(midiToFrequency(note));
+
+  osc6.setFrequency(midiToFrequency(note - (range / 4.0)));
+  osc4.setFrequency(midiToFrequency(note - (range / 2.0)));
+  osc2.setFrequency(midiToFrequency(note - range));
+
+  osc7.setFrequency(midiToFrequency(note + (range / 4.0)));
+  osc5.setFrequency(midiToFrequency(note + (range / 2.0)));
+  osc3.setFrequency(midiToFrequency(note + range));
+
+  float cv2 = analogRead(PIN_CV2) / 1023.0;
+  unisonCount = 1 + cv2 * 6;
+}
+
+uint8_t getUnison() {
+    int values = 0; // Variable to hold the sum of oscillator values
+    switch (unisonCount) {
+        case 1:
+            values = osc1.next();
+            return values + 127;
+
+        case 2:
+            values = osc1.next() + osc2.next();
+            return (values / 2) + 127;
+
+        case 3:
+            values = osc1.next() + osc2.next() + osc3.next();
+            return (values / 3) + 127;
+
+        case 4:
+            values = osc1.next() + osc2.next() + osc3.next() + osc4.next();
+            return (values / 4) + 127;
+
+        case 5:
+            values = osc1.next() + osc2.next() + osc3.next() + osc4.next() + osc5.next();
+            return (values / 5) + 127;
+
+        case 6:
+            values = osc1.next() + osc2.next() + osc3.next() + osc4.next() + osc5.next() + osc6.next();
+            return (values / 6) + 127;
+
+        case 7:
+            values = osc1.next() + osc2.next() + osc3.next() + osc4.next() + osc5.next() + osc6.next() + osc7.next();
+            return (values / 7) + 127;
+
+        default:
+            return 127; // Default to midpoint if unisonCount is out of range
+    }
+}
+
+
 void loop() {
   // parse incoming MIDI messages
    if (MIDI.read()) {
@@ -79,9 +143,7 @@ void loop() {
 
       // Debug output
       if (type == MIDI_NOTE_ON) {
-        osc1.setFrequency(midiToFrequency(data1));
-        osc2.setFrequency(midiToFrequency(data1 + 4));
-        osc3.setFrequency(midiToFrequency(data1 - 7));
+        updateNote(data1);
         // logger.printf("NOTE ON: %d, %d, %ld\n", data1, (int)freq, osc1.phaseIncrement);
         digitalWrite(GATE_PIN, HIGH);
       } else if (type == MIDI_NOTE_OFF) {
@@ -89,14 +151,13 @@ void loop() {
       } else if (type == MIDI_CONTROL_CHANGE) {
           
       } else {
-          logger.print("Unknown | ");
+          // logger.print("Unknown MIDI Data| ");
       }
   }
 
   if (read) {
     // Output sine wave to DAC
-    int values = osc1.next() + osc2.next() + osc3.next();
-    DAC0.DATA = (values / 3) + 127;
+    DAC0.DATA = getUnison();
     read = false;
-  }
+  } 
 }
