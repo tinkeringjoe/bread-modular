@@ -13,7 +13,9 @@
 SimpleMIDI MIDI;
 SoftwareSerial logger = SoftwareSerial(-1, LOGGER_PIN_TX);
 
-CustomOscillator oscillator(TRIANGLE2048_DATA, 2048, 10000);
+CustomOscillator osc1(TRIANGLE2048_DATA, 2048, 10000);
+CustomOscillator osc2(TRIANGLE2048_DATA, 2048, 10000);
+CustomOscillator osc3(TRIANGLE2048_DATA, 2048, 10000);
 
 void setupTimer() {
     TCB0.CTRLA |= TCB_ENABLE_bm; // counting value
@@ -62,7 +64,7 @@ void setup() {
   MIDI.begin(31250);
 
   setupTimer();
-  oscillator.setFrequency(440);
+  osc1.setFrequency(440);
 
   logger.println("MCO 0.2.0 Started!");
 }
@@ -77,9 +79,10 @@ void loop() {
 
       // Debug output
       if (type == MIDI_NOTE_ON) {
-        float freq = midiToFrequency(data1);
-        oscillator.setFrequency(freq);
-        logger.printf("NOTE ON: %d, %d, %ld\n", data1, (int)freq, oscillator.phaseIncrement);
+        osc1.setFrequency(midiToFrequency(data1));
+        osc2.setFrequency(midiToFrequency(data1 + 4));
+        osc3.setFrequency(midiToFrequency(data1 - 7));
+        // logger.printf("NOTE ON: %d, %d, %ld\n", data1, (int)freq, osc1.phaseIncrement);
         digitalWrite(GATE_PIN, HIGH);
       } else if (type == MIDI_NOTE_OFF) {
         digitalWrite(GATE_PIN, LOW);
@@ -92,7 +95,8 @@ void loop() {
 
   if (read) {
     // Output sine wave to DAC
-    DAC0.DATA = oscillator.next() + 127;
+    int values = osc1.next() + osc2.next() + osc3.next();
+    DAC0.DATA = (values / 3) + 127;
     read = false;
   }
 }
