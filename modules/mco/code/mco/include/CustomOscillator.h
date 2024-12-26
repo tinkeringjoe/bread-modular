@@ -25,6 +25,10 @@ public:
         return wavetable[index];
     }
 
+    void updateWaveTable(const int8_t* w) {
+        wavetable = w;
+    }
+
 public:
     const int8_t* wavetable;  // Pointer to the wavetable
     uint16_t tableSize;        // Size of the wavetable
