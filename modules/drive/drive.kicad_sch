@@ -2075,6 +2075,12 @@
 		(uuid "c5ed27c0-67fd-46b8-8285-cd7e7b283952")
 	)
 	(junction
+		(at 49.53 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3b0712e-26a1-4a3c-bdde-e093b1f4e801")
+	)
+	(junction
 		(at 222.25 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2139,6 +2145,16 @@
 			(type default)
 		)
 		(uuid "09dbb306-2259-45d2-8956-bee11c9de714")
+	)
+	(wire
+		(pts
+			(xy 46.99 76.2) (xy 49.53 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ea89c89-6e30-4e8a-80a1-0c5472735a92")
 	)
 	(wire
 		(pts
@@ -2232,6 +2248,26 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 71.12) (xy 49.53 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46641c5e-6fa7-48eb-bcfd-f869c36066d4")
+	)
+	(wire
+		(pts
+			(xy 64.77 87.63) (xy 72.39 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46a74f8d-86ce-41e6-8a9f-a1a3e91cfc95")
+	)
+	(wire
+		(pts
 			(xy 129.54 107.95) (xy 130.81 107.95)
 		)
 		(stroke
@@ -2249,6 +2285,16 @@
 			(type default)
 		)
 		(uuid "48deb364-243d-433f-83b4-1c8add36cab7")
+	)
+	(wire
+		(pts
+			(xy 30.48 76.2) (xy 39.37 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4982f00b-794e-4de8-96f3-1b19dd5c6a2b")
 	)
 	(wire
 		(pts
@@ -2492,16 +2538,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 71.12) (xy 53.34 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "720466dc-8e31-4776-bf05-a733352030f8")
-	)
-	(wire
-		(pts
 			(xy 233.68 31.75) (xy 233.68 29.21)
 		)
 		(stroke
@@ -2509,6 +2545,16 @@
 			(type default)
 		)
 		(uuid "747a43bd-0cbb-47ad-bb56-8bf8af50075b")
+	)
+	(wire
+		(pts
+			(xy 49.53 87.63) (xy 57.15 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77c29c29-e446-4214-801f-0096869a86f0")
 	)
 	(wire
 		(pts
@@ -2539,16 +2585,6 @@
 			(type default)
 		)
 		(uuid "841f0369-1526-4dd1-abe5-1ad1120f785a")
-	)
-	(wire
-		(pts
-			(xy 72.39 83.82) (xy 49.53 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a8da93d-60a2-416a-8362-901fda36d7ea")
 	)
 	(wire
 		(pts
@@ -2672,7 +2708,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 73.66) (xy 72.39 83.82)
+			(xy 72.39 73.66) (xy 72.39 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2722,6 +2758,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 71.12) (xy 49.53 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da788703-bff4-4b06-928a-46ea5b3112fe")
+	)
+	(wire
+		(pts
 			(xy 106.68 77.47) (xy 107.95 77.47)
 		)
 		(stroke
@@ -2752,7 +2798,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 83.82) (xy 49.53 76.2)
+			(xy 49.53 87.63) (xy 49.53 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2842,6 +2888,28 @@
 	)
 	(global_label "V_MID"
 		(shape output)
+		(at 49.53 64.77 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "32970fed-8fee-47c9-a573-6022ec51c12d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 56.4024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_MID"
+		(shape output)
 		(at 105.41 62.23 90)
 		(fields_autoplaced yes)
 		(effects
@@ -2864,7 +2932,7 @@
 	)
 	(global_label "AUDIO_IN"
 		(shape input)
-		(at 41.91 71.12 180)
+		(at 30.48 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2874,7 +2942,7 @@
 		)
 		(uuid "72fa3948-dd12-4bd7-bb51-fdd64c6a74a1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.3975 71.12 0)
+			(at 18.9675 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3669,7 +3737,7 @@
 				)
 			)
 		)
-		(property "Value" "1M"
+		(property "Value" "500k"
 			(at 125.73 114.3 90)
 			(effects
 				(font
@@ -3959,6 +4027,74 @@
 			(project "007_passive_attenuator"
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 60.96 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e990516-f96e-4fb1-a7e5-cfd7bd3e97f7")
+		(property "Reference" "R7"
+			(at 60.96 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 60.96 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 60.96 89.408 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 60.96 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e1a78a5-75b4-4527-8d2a-169cf8f1cbeb")
+		)
+		(pin "2"
+			(uuid "d69aa81f-3f3e-47b3-bba4-2abe28cb3716")
+		)
+		(instances
+			(project "drive"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -4600,7 +4736,7 @@
 				)
 			)
 		)
-		(property "Value" "1M"
+		(property "Value" "500k"
 			(at 125.73 144.78 90)
 			(effects
 				(font
@@ -4928,6 +5064,74 @@
 			(project ""
 				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 43.18 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9725cc0-5790-4650-aea1-184e36e95ec6")
+		(property "Reference" "R8"
+			(at 43.18 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 43.18 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 43.18 77.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 43.18 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5c33759-dab7-45b2-997d-179ae09ad730")
+		)
+		(pin "2"
+			(uuid "e9df0a47-657b-4457-bccf-29d4336d9516")
+		)
+		(instances
+			(project "drive"
+				(path "/b63493d3-5f6d-47e3-845b-87e7090fc1ab"
+					(reference "R8")
 					(unit 1)
 				)
 			)
