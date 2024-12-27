@@ -1,4 +1,11 @@
 # Changelog
 
+## 0.2.0
+A whole new version of MCO which uses the 8-bit DAC.
+Now it has two CV controls and a mode selector.
+With these, we can feed it with multiple software implementations.
+Current version is a UNISON oscillator.
+It also comes with a simple analog low pass filter to smooth the DAC output.
+
 ## 0.1.0
 Initial Release
