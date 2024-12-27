@@ -1,4 +1,9 @@
 # Changelog
 
+## 0.2.0
+Remove radio freq. capturing with the gain increase.
+
+This is due to the high-gain nature & the use of non-inverting buffer. Now change it to an inverting buffer & all is gone
+
 ## 0.1.0
 Initial Release
