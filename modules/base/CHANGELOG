@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0
+Add USB power support to the base.
+When connecting multiple base boards, we are sending 5V & the regulator takes care of stepping it down to 3.3v. This will remove some of the critical noise in the setup.
+
+
 ## 0.2.1
 Add two Jack sockets each POWER & GND. So, we can cascase if we needed.
 
