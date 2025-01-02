@@ -7,3 +7,6 @@
 [submodule "opt/Type-C"]
 	path = opt/Type-C.pretty
 	url = https://github.com/arunoda/Type-C.pretty.git
+[submodule "opt/Panelization.pretty"]
+	path = opt/Panelization.pretty
+	url = https://github.com/madworm/Panelization.pretty.git
