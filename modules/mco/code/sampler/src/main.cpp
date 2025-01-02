@@ -6,7 +6,10 @@
 #include "SimpleMIDI.h"
 #include "CustomOscillator.h"
 #include "ModeHandler.h"
-#include "samples/kick.h"
+#include "samples/ride.h"
+#include "samples/snare.h"
+#include "samples/perc.h"
+#include "samples/clap.h"
 
 #define GATE_PIN PIN_PA7
 #define LOGGER_PIN_TX PIN_PB4
@@ -31,9 +34,9 @@ void setupTimer() {
 
     // Uses 20Mhz clock & divide it by for here
     // So, 1 tick is 0.1us
-    TCB0.CTRLA |= TCB_CLKSEL_CLKDIV2_gc; // clock div by 2
+    TCB0.CTRLA |= TCB_CLKSEL_CLKDIV2_gc; // clock div by 1
 
-    TCB0.CCMP = 10000000 / KICK_SAMPLE_LENGTH; // Set the compare value
+    TCB0.CCMP = 10000000 / (RIDE_SAMPLE_RATE); // Set the compare value
   
     // Enabling inturrupts
     TCB0.CTRLB |= TCB_CNTMODE_INT_gc; // Timer interrupt mode (periodic interrupts)
@@ -44,11 +47,15 @@ void setupTimer() {
 int index = 0;
 // TCB0 Interrupt Service Routine
 ISR(TCB0_INT_vect) {
-  if (index < KICK_SAMPLE_LENGTH) {
-    DAC0.DATA = KICK_SAMPLE[index];
-    index += 1;
+  if (index >= CLAP_SAMPLE_LENGTH) {
+    index = 0;
   }
 
+  DAC0.DATA = SNARE_SAMPLE[index];
+  DAC0.DATA = RIDE_SAMPLE[index];
+  DAC0.DATA = PERC_SAMPLE[index];
+  DAC0.DATA = CLAP_SAMPLE[index];
+  index += 1;
 
   // Clear the interrupt flag∫
   TCB0.INTFLAGS = TCB_CAPT_bm;
@@ -97,7 +104,6 @@ void loop() {
 
       // Debug output
       if (type == MIDI_NOTE_ON) {
-        index = 0;
         digitalWrite(GATE_PIN, HIGH);
       } else if (type == MIDI_NOTE_OFF) {
         digitalWrite(GATE_PIN, LOW);
