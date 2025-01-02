@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+
+Update the USB-C socket's copper layer masks for proper soldering.
+
 ## 0.3.0
 Add USB power support to the base.
 When connecting multiple base boards, we are sending 5V & the regulator takes care of stepping it down to 3.3v. This will remove some of the critical noise in the setup.
