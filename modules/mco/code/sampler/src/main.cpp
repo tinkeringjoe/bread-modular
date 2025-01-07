@@ -4,12 +4,19 @@
 #include <avr/interrupt.h>
 #include "utils.h"
 #include "SimpleMIDI.h"
-#include "CustomOscillator.h"
 #include "ModeHandler.h"
+#include "Player.h"
 #include "samples/ride.h"
 #include "samples/snare.h"
 #include "samples/perc.h"
 #include "samples/clap.h"
+
+/*
+
+  * Add Velocity Support
+  * Add some hats & rim shot
+  * Support parallel playing 
+*/
 
 #define GATE_PIN PIN_PA7
 #define LOGGER_PIN_TX PIN_PB4
@@ -44,20 +51,9 @@ void setupTimer() {
     sei();
 }
 
-const uint8_t* sampleData = 0;
-int sampleLenght;
-int index = 0;
 // TCB0 Interrupt Service Routine
 ISR(TCB0_INT_vect) {
-  if (sampleData != 0 && index < sampleLenght) {
-    // DAC0.DATA = SNARE_SAMPLE[index];
-    // DAC0.DATA = RIDE_SAMPLE[index];
-    DAC0.DATA = sampleData[index];
-    // DAC0.DATA = CLAP_SAMPLE[index];
-    index += 1;
-  } else {
-    DAC0.DATA = 127;
-  }
+  DAC0.DATA = getPlayHead();
 
   // Clear the interrupt flag∫
   TCB0.INTFLAGS = TCB_CAPT_bm;
@@ -102,31 +98,22 @@ void pickSound(uint8_t note) {
   switch (soundIndex)
   {
     case 0:
-      sampleData = SNARE_SAMPLE;
-      sampleLenght = SNARE_SAMPLE_LENGTH;
-      index = 0;
+      startPlayer(SNARE_SAMPLE, SNARE_SAMPLE_LENGTH);
       break;
 
     case 2:
-      sampleData = CLAP_SAMPLE;
-      sampleLenght = CLAP_SAMPLE_LENGTH;
-      index = 0;
+      startPlayer(CLAP_SAMPLE, CLAP_SAMPLE_LENGTH);
       break;
 
     case 4:
-      sampleData = PERC_SAMPLE;
-      sampleLenght = PERC_SAMPLE_LENGTH;
-      index = 0;
+      startPlayer(PERC_SAMPLE, PERC_SAMPLE_LENGTH);
       break;
 
     case 5:
-      sampleData = RIDE_SAMPLE;
-      sampleLenght = RIDE_SAMPLE_LENGTH;
-      index = 0;
+      startPlayer(RIDE_SAMPLE, RIDE_SAMPLE_LENGTH);
       break;
     
     default:
-      sampleData = 0;
       break;
   }
 }
@@ -148,7 +135,7 @@ void loop() {
       } else if (type == MIDI_CONTROL_CHANGE) {
           
       } else {
-          logger.print("Unknown MIDI Data| ");
+          // logger.print("Unknown MIDI Data| ");
       }
   }
 
