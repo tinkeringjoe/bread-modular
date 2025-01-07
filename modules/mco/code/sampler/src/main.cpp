@@ -44,18 +44,20 @@ void setupTimer() {
     sei();
 }
 
+const uint8_t* sampleData = 0;
+int sampleLenght;
 int index = 0;
 // TCB0 Interrupt Service Routine
 ISR(TCB0_INT_vect) {
-  if (index >= CLAP_SAMPLE_LENGTH) {
-    index = 0;
+  if (sampleData != 0 && index < sampleLenght) {
+    // DAC0.DATA = SNARE_SAMPLE[index];
+    // DAC0.DATA = RIDE_SAMPLE[index];
+    DAC0.DATA = sampleData[index];
+    // DAC0.DATA = CLAP_SAMPLE[index];
+    index += 1;
+  } else {
+    DAC0.DATA = 127;
   }
-
-  DAC0.DATA = SNARE_SAMPLE[index];
-  DAC0.DATA = RIDE_SAMPLE[index];
-  DAC0.DATA = PERC_SAMPLE[index];
-  DAC0.DATA = CLAP_SAMPLE[index];
-  index += 1;
 
   // Clear the interrupt flag∫
   TCB0.INTFLAGS = TCB_CAPT_bm;
@@ -105,12 +107,15 @@ void loop() {
       // Debug output
       if (type == MIDI_NOTE_ON) {
         digitalWrite(GATE_PIN, HIGH);
+        sampleData = PERC_SAMPLE;
+        sampleLenght = PERC_SAMPLE_LENGTH;
+        index = 0;
       } else if (type == MIDI_NOTE_OFF) {
         digitalWrite(GATE_PIN, LOW);
       } else if (type == MIDI_CONTROL_CHANGE) {
           
       } else {
-          // logger.print("Unknown MIDI Data| ");
+          logger.print("Unknown MIDI Data| ");
       }
   }
 
