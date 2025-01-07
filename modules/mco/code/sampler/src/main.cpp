@@ -96,6 +96,41 @@ void setup() {
   logger.println("MCO 0.2.0 Started!");
 }
 
+void pickSound(uint8_t note) {
+  // Here we pick sounds for C, D, E, F (regardless of their octave)
+  byte soundIndex = note % 12;
+  switch (soundIndex)
+  {
+    case 0:
+      sampleData = SNARE_SAMPLE;
+      sampleLenght = SNARE_SAMPLE_LENGTH;
+      index = 0;
+      break;
+
+    case 2:
+      sampleData = CLAP_SAMPLE;
+      sampleLenght = CLAP_SAMPLE_LENGTH;
+      index = 0;
+      break;
+
+    case 4:
+      sampleData = PERC_SAMPLE;
+      sampleLenght = PERC_SAMPLE_LENGTH;
+      index = 0;
+      break;
+
+    case 5:
+      sampleData = RIDE_SAMPLE;
+      sampleLenght = RIDE_SAMPLE_LENGTH;
+      index = 0;
+      break;
+    
+    default:
+      sampleData = 0;
+      break;
+  }
+}
+
 void loop() {
   // parse incoming MIDI messages
    if (MIDI.read()) {
@@ -107,9 +142,7 @@ void loop() {
       // Debug output
       if (type == MIDI_NOTE_ON) {
         digitalWrite(GATE_PIN, HIGH);
-        sampleData = PERC_SAMPLE;
-        sampleLenght = PERC_SAMPLE_LENGTH;
-        index = 0;
+        pickSound(data1);
       } else if (type == MIDI_NOTE_OFF) {
         digitalWrite(GATE_PIN, LOW);
       } else if (type == MIDI_CONTROL_CHANGE) {
