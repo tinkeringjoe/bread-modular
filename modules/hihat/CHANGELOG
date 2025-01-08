@@ -1,4 +1,8 @@
 # Changelog
 
+## 0.2.0
+MIDI Support
+Now we can control gate, accent & open hat gate via MIDI.
+
 ## 0.1.0
 Initial Release
