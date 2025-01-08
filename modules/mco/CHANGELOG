@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0
+Add a 909 sampler for the MCO. You can simply play white keys and there are
+samples on those.
+It supports 8 note polyphony and has velocity control.
+
 ## 0.2.0
 A whole new version of MCO which uses the 8-bit DAC.
 Now it has two CV controls and a mode selector.
