@@ -1,6 +1,8 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include <SoftwareSerial.h>
+
 #include <Arduino.h>
 #define TOTAL_PLAYERS 8
 
@@ -8,13 +10,14 @@ class Player {
   public:
     const uint8_t* sampleData = 0;
     uint16_t sampleLenght = 0;
+    float velocityNormalized = 1.0;
     uint16_t index = 0;
 };
 
 Player players[TOTAL_PLAYERS];
 
 uint8_t getPlayHead() {
-  int16_t combinedValue = 0;
+  int combinedValue = 0;
   int playCount = 0;
 
   for (int lc=0; lc<TOTAL_PLAYERS; lc++) {
@@ -31,11 +34,12 @@ uint8_t getPlayHead() {
   return min(combinedValue + 127, 255);
 }
 
-void startPlayer(const uint8_t* sampleData, uint16_t sampleLength) {
+void startPlayer(const uint8_t* sampleData, uint16_t sampleLength, float velocityNormalized) {
   for (int lc=0; lc<TOTAL_PLAYERS; lc++) {
     if (players[lc].sampleData == 0) {
       players[lc].sampleData = sampleData;
       players[lc].sampleLenght = sampleLength;
+      players[lc].velocityNormalized = velocityNormalized;
       players[lc].index = 0;
       break;
     }

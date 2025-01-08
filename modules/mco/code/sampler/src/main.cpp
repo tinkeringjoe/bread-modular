@@ -10,9 +10,11 @@
 #include "samples/snare.h"
 #include "samples/perc.h"
 #include "samples/clap.h"
+#include "samples/rim.h"
+#include "samples/closed_hat.h"
+#include "samples/open_hat.h"
 
 /*
-
   * Add Velocity Support
   * Add some hats & rim shot
   * Support parallel playing 
@@ -92,25 +94,39 @@ void setup() {
   logger.println("MCO 0.2.0 Started!");
 }
 
-void pickSound(uint8_t note) {
+void pickSound(uint8_t note, uint8_t velocity) {
   // Here we pick sounds for C, D, E, F (regardless of their octave)
   byte soundIndex = note % 12;
+  float velocityNormalized = velocity / 127.0;
+  // logger.printf("Velocity: %d\n", velocity);
   switch (soundIndex)
   {
     case 0:
-      startPlayer(SNARE_SAMPLE, SNARE_SAMPLE_LENGTH);
+      startPlayer(SNARE_SAMPLE, SNARE_SAMPLE_LENGTH, velocityNormalized);
       break;
 
     case 2:
-      startPlayer(CLAP_SAMPLE, CLAP_SAMPLE_LENGTH);
+      startPlayer(CLAP_SAMPLE, CLAP_SAMPLE_LENGTH, velocityNormalized);
       break;
 
     case 4:
-      startPlayer(PERC_SAMPLE, PERC_SAMPLE_LENGTH);
+      startPlayer(PERC_SAMPLE, PERC_SAMPLE_LENGTH, velocityNormalized);
       break;
 
     case 5:
-      startPlayer(RIDE_SAMPLE, RIDE_SAMPLE_LENGTH);
+      startPlayer(RIM_SAMPLE, RIM_SAMPLE_LENGTH, velocityNormalized);
+      break;
+
+    case 7:
+      startPlayer(CLOSED_HAT_SAMPLE, CLOSED_HAT_SAMPLE_LENGTH, velocityNormalized);
+      break;
+
+    case 9:
+      startPlayer(OPEN_HAT_SAMPLE, OPEN_HAT_SAMPLE_LENGTH, velocityNormalized);
+      break;
+
+    case 11:
+      startPlayer(RIDE_SAMPLE, RIDE_SAMPLE_LENGTH, velocityNormalized);
       break;
     
     default:
@@ -129,7 +145,7 @@ void loop() {
       // Debug output
       if (type == MIDI_NOTE_ON) {
         digitalWrite(GATE_PIN, HIGH);
-        pickSound(data1);
+        pickSound(data1, data2);
       } else if (type == MIDI_NOTE_OFF) {
         digitalWrite(GATE_PIN, LOW);
       } else if (type == MIDI_CONTROL_CHANGE) {
