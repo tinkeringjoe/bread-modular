@@ -14,12 +14,6 @@
 #include "samples/closed_hat.h"
 #include "samples/open_hat.h"
 
-/*
-  * Add Velocity Support
-  * Add some hats & rim shot
-  * Support parallel playing 
-*/
-
 #define GATE_PIN PIN_PA7
 #define LOGGER_PIN_TX PIN_PB4
 #define PIN_CV1 PIN_PA1
@@ -53,9 +47,10 @@ void setupTimer() {
     sei();
 }
 
+bool playNow = false;
 // TCB0 Interrupt Service Routine
 ISR(TCB0_INT_vect) {
-  DAC0.DATA = getPlayHead();
+  playNow = true;
 
   // Clear the interrupt flag∫
   TCB0.INTFLAGS = TCB_CAPT_bm;
@@ -95,38 +90,36 @@ void setup() {
 }
 
 void pickSound(uint8_t note, uint8_t velocity) {
-  // Here we pick sounds for C, D, E, F (regardless of their octave)
+  // Here we pick sounds for C, D, E, F, G, A, B (regardless of their octave)
   byte soundIndex = note % 12;
-  float velocityNormalized = velocity / 127.0;
-  // logger.printf("Velocity: %d\n", velocity);
   switch (soundIndex)
   {
     case 0:
-      startPlayer(SNARE_SAMPLE, SNARE_SAMPLE_LENGTH, velocityNormalized);
+      startPlayer(0, SNARE_SAMPLE, SNARE_SAMPLE_LENGTH, velocity);
       break;
 
     case 2:
-      startPlayer(CLAP_SAMPLE, CLAP_SAMPLE_LENGTH, velocityNormalized);
+      startPlayer(2, CLAP_SAMPLE, CLAP_SAMPLE_LENGTH, velocity);
       break;
 
     case 4:
-      startPlayer(PERC_SAMPLE, PERC_SAMPLE_LENGTH, velocityNormalized);
+      startPlayer(4, PERC_SAMPLE, PERC_SAMPLE_LENGTH, velocity);
       break;
 
     case 5:
-      startPlayer(RIM_SAMPLE, RIM_SAMPLE_LENGTH, velocityNormalized);
+      startPlayer(5, RIM_SAMPLE, RIM_SAMPLE_LENGTH, velocity);
       break;
 
     case 7:
-      startPlayer(CLOSED_HAT_SAMPLE, CLOSED_HAT_SAMPLE_LENGTH, velocityNormalized);
+      startPlayer(7, CLOSED_HAT_SAMPLE, CLOSED_HAT_SAMPLE_LENGTH, velocity);
       break;
 
     case 9:
-      startPlayer(OPEN_HAT_SAMPLE, OPEN_HAT_SAMPLE_LENGTH, velocityNormalized);
+      startPlayer(9, OPEN_HAT_SAMPLE, OPEN_HAT_SAMPLE_LENGTH, velocity);
       break;
 
     case 11:
-      startPlayer(RIDE_SAMPLE, RIDE_SAMPLE_LENGTH, velocityNormalized);
+      startPlayer(11, RIDE_SAMPLE, RIDE_SAMPLE_LENGTH, velocity);
       break;
     
     default:
@@ -168,5 +161,10 @@ void loop() {
       toggleLED();
       toggleLED();
     }
+  }
+
+  if (playNow) {
+    DAC0.DATA = getPlayHead();
+    playNow = false;
   }
 }
