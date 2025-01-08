@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+Add support to select MIDI A or MIDI B. Now we can attach a toggle or use
+some jumpers select the type A or B.
+
 ## 0.2.1
 No changes in the code or schematics. But simply porting the
 Arduino codebase to Platform.io
