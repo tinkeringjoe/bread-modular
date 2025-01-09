@@ -6,6 +6,7 @@ Bread Modular is an open-source hardware modular synthesizer format designed to 
 
 * **Modular Design:** Just like Eurorack
 * **USB-Powered:** It can be portable
+* **Minimal Design:** Cost Effective
 * **Modular MIDI Support:** Use MIDI to communicate between modules (still supports CV & Gate)
 * **Analog and Digital Signal Paths:** It’s your choice 
 * **Diverse Built-in Modules:** Includes a wide range of pre-designed modules
