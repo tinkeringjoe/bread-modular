@@ -14,8 +14,8 @@
 #define LOGGER_PIN_TX PIN_PB4
 #define PIN_CV1 PIN_PA1
 #define PIN_CV2 PIN_PA2
-#define TOGGLE_PIN PIN_PC2
-#define TOGGLE_LED PIN_PC3
+#define TOGGLE_PIN PIN_PA4
+#define TOGGLE_LED PIN_PA5
 
 SimpleMIDI MIDI;
 SoftwareSerial logger = SoftwareSerial(-1, LOGGER_PIN_TX);
