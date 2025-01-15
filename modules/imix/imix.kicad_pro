@@ -450,7 +450,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "i_mix.kicad_pro",
+    "filename": "imix.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -600,7 +600,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": "i_mix.wbk"
+      "workbook_filename": "imix.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
