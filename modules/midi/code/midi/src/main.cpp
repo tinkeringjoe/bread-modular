@@ -19,11 +19,8 @@
   16 - PA3
 */
 
-#include <MIDI.h>
+#include <SimpleMIDI.h>
 #include <SoftwareSerial.h>
-
-// Create a MIDI object
-MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI);
 
 #define PIN_RX 6 // PB3
 #define PIN_TX 7 // PB2
@@ -46,6 +43,9 @@ MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI);
 #define IMIDI_PIN_05 5 // PB4
 #define IMIDI_PIN_06 8 // PB1
 #define IMIDI_PIN_07 9 // PB0
+
+// Create a MIDI object
+SimpleMIDI MIDI;
 
 SoftwareSerial midiSerialArray[] = {
     SoftwareSerial(-1, IMIDI_PIN_01),
@@ -131,14 +131,16 @@ void handleNoteOff(byte channel, byte note, byte velocity) {
   sendMIDI(channel, 0x80, note, velocity);
 }
 
+// Callback for handling CC messages
+void handleControlChange(byte channel, byte controller, byte value) {
+  sendMIDI(channel, 0xB0, controller, value);
+}
+
 void setup() {
   setupGates();
 
-  Serial.begin(31250);
    // Initialize the MIDI library
-  MIDI.begin(MIDI_CHANNEL_OMNI); // Listen to all MIDI channels
-  MIDI.setHandleNoteOn(handleNoteOn);
-  MIDI.setHandleNoteOff(handleNoteOff);
+  MIDI.begin(31250);
 
   setupIMIDI();
 
@@ -146,5 +148,21 @@ void setup() {
 }
 
 void loop() {
-  MIDI.read();
+ if (MIDI.read()) {
+    uint8_t type = MIDI.getType();
+    uint8_t channel = MIDI.getChannel() + 1;
+    uint8_t data1 = MIDI.getData1();
+    uint8_t data2 = MIDI.getData2();
+
+    // Debug output
+    if (type == MIDI_NOTE_ON) {
+      handleNoteOn(channel, data1, data2);
+    } else if (type == MIDI_NOTE_OFF) {
+      handleNoteOff(channel, data1, data2);
+    } else if (type == MIDI_CONTROL_CHANGE) {
+      handleControlChange(channel, data1, data2);
+    } else {
+        // logger.print("Unknown MIDI Data| ");
+    }
+}
 }
