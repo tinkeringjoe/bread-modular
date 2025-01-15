@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+Add support for MIDI CC routing via a firmware update.
+Now we also a custom written Simple MIDI parsing library.
+
 ## 0.3.0
 Add support to select MIDI A or MIDI B. Now we can attach a toggle or use
 some jumpers select the type A or B.
